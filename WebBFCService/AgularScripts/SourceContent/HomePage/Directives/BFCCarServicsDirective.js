@@ -4,7 +4,6 @@
         transclude: true,
         replace: true,
         templateUrl: 'Views/bfcEachServicesProfile/bfcServicesButViewContProf.html',
-
         controller: "BFCViewProfileContactFeedBackCtrl",//controller to bind
         controllerAs: "vm", bindToController: true,//
         link: function (scope, elm, attrs, ctrl) {
