@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgularScripts\SourceContent\CommonScript\CommonSource.js" />
+    <Content Include="AgularScripts\SourceContent\HomePage\Controller\BFCHomePage.js" />
+    <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCCarServicsDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Modules\HomePage.js" />
     <Content Include="index.html" />
     <Content Include="Rescorces\images\All_Sports_Images.jpg" />
@@ -874,7 +876,9 @@
     <Content Include="Scripts\test-bundles\angular-sanitize.js" />
     <Content Include="Scripts\test-bundles\angular-touch.js" />
     <Content Include="Styles\CSS\Background.css" />
+    <Content Include="Styles\CSS\BFCViewProfileContactFeeBack.css" />
     <Content Include="Styles\CSS\Homepage.css" />
+    <Content Include="Views\bfcEachServicesProfile\bfcCarServicesButViewContProf.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -941,7 +945,6 @@
   <ItemGroup>
     <Folder Include="AgularScripts\SupportingScript\" />
     <Folder Include="Rescorces\Fonts\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

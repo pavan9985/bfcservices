@@ -9,8 +9,8 @@
     <script src="AgularScripts/SourceContent/CommonScript/CommonSource.js"></script>
     <script src="Scripts/angular.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Modules/HomePage.js"></script>
-    <script src="AgularScripts/SourceContent/HomePage/Controllers/BFCHomePage.js"></script>
-
+    <script src="AgularScripts/SourceContent/HomePage/Directives/BFCCarServicsDirective.js"></script>
+    <script src="AgularScripts/SourceContent/HomePage/Controller/BFCHomePage.js"></script>
     <title>BFC Services</title>
 </head>
 <body ng-app="BFCHomePage" ng-controller="BFCHomeCtrl">
@@ -97,7 +97,7 @@
                 <div class="BFCSerVicesHeader">BFC Providing</div>
                 <div class="ScrollbelContent">
                     <div class="BFCServicesCategory">
-                        <div class="BFCEachServices">
+                        <div class="BFCEachServices" bfc-car-service-directive>
                             <div class="ServicesMatter">
                                 <div class="BFCEachServicesImage">&#x2620;</div>
                                 <div class="ServicesNavigationBar">
