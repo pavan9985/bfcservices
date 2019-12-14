@@ -1,4 +1,61 @@
 ﻿.BfcServicsProfContView {
-    color: black;
-    background : green;
+    background-color: #cdcfd2;
+    height: 75px;
+    margin: -25px 0px 0px 0px;
+    box-shadow: -2px 1px 5px #ca2727;
+    opacity: 1;
+    overflow: hidden;
+    transition: 1s ease-in-out;
 }
+
+.viewProfile {
+    float: left;
+    max-width: 22%;
+    max-width: 87px;
+    margin: 0px 0px 0px 15px;
+}
+
+.viewContact {
+    float: right;
+    margin: 0px 15px 0px 0px;
+}
+
+.viewFeedBack {
+    margin: 27px 0px 0px 0px;
+}
+
+.ViewButton {
+    cursor: pointer;
+    color: orange;
+    border: 0px;
+    background-color: #3d096f;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+    .ViewButton:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.CrossCancle {
+    color: red;
+    transition: 0.2s ease-in-out;
+    margin: 2px 8px 0px 0px;
+    width: fit-content;
+    float: right;
+}
+
+    .CrossCancle:hover {
+        -ms-transform: scale(1.2) rotate(-360deg);
+        -webkit-transform: scale(1.2) rotate(-360deg);
+        transform: scale(1.2) rotate(-360deg);
+        text-shadow: 1px 1px 2.5px black;
+    }
