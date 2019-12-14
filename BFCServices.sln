@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BFCServices", "BFCServices", "{5BB9F2B4-11D7-46A6-B7D9-0BD61582DD2F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebBFCService", "WebBFCService\WebBFCService.vbproj", "{B16A2ADD-25BF-4F65-9E96-ACDE1E1CAAE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B16A2ADD-25BF-4F65-9E96-ACDE1E1CAAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16A2ADD-25BF-4F65-9E96-ACDE1E1CAAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16A2ADD-25BF-4F65-9E96-ACDE1E1CAAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16A2ADD-25BF-4F65-9E96-ACDE1E1CAAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B16A2ADD-25BF-4F65-9E96-ACDE1E1CAAE5} = {5BB9F2B4-11D7-46A6-B7D9-0BD61582DD2F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F22F14CA-E972-4EDC-AD70-5E8EB1E9DD71}
+	EndGlobalSection
+EndGlobal

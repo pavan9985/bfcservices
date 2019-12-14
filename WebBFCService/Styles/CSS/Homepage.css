@@ -1,0 +1,522 @@
+﻿#bordertop {
+    max-width: 100%;
+    min-width: 200%;
+    max-height: 50px;
+    min-height: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-image: linear-gradient(to bottom, #031a7b, #00030a6e);
+    background-image: -o-linear-gradient(bottom, #031a7b, #00030a6e);
+    background-image: -ms-linear-gradient(bottom, #031a7b, #00030a6e);
+    background-image: -webkit-linear-gradient(bottom, #07144a, #00030aab);
+    background-image: -moz-linear-gradient(bottom, #031a7b, #00030a6e);
+}
+
+.TitleText:hover {
+    background: linear-gradient(to right, #eff102,#31fb07,#f3f3ee,#f79803, #0b00ff,#2557f3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+
+
+.TitleText {
+    float: left;
+    top: 0%;
+    left: 0%;
+    max-width: 17%;
+    min-width: 100px;
+    background-color: white;
+    background: linear-gradient(to right, #0e37f1,#f35a1f,#f3f3ee,#87f703, #d8ff00,#ffa000,#ffa000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0.3% 2.4%;
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 500;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+
+.SocialMediaTab {
+    top: 0px;
+    margin: 60px 0px 0px 0px;
+    position: fixed;
+    height: 30px;
+    max-width: 300px;
+    z-index: 1;
+    min-width: 240px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(to bottom, #ff9800, #fffdfdb8, #1fab2b73);
+}
+
+.SocialMedialEachitem {
+    float: left;
+    margin: 5px 14% 0px 10px;
+    font-size: 18.5px;
+    color: white;
+}
+
+.PointHover:hover {
+    color: green;
+    -webkit-transition: 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: 0.3s;
+    -ms-transform: scale(1.3) rotate(10deg); /* IE 9 */
+    -webkit-transform: scale(1.3) rotate(10deg); /* Safari 3-8 */
+    transform: scale(1.3) rotate(10deg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.TopContactInfo {
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+    min-width: 100px;
+    font-size: 19px;
+    max-width: 240px;
+    float: right;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+}
+
+.TopContactEachInfo {
+    float: left;
+    min-width: 50px;
+    max-width: 200px;
+    margin: 1% 10% 0px 0%;
+}
+
+    .TopContactEachInfo:hover {
+        color: #77e871;
+        opacity: 0.7;
+        -webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: 0.5s;
+    }
+
+.ServicesInfo {
+    position: relative;
+    z-index: 0;
+}
+
+.ServicesHeader {
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 4% 0px 0px;
+    font-size: xx-large;
+    font-weight: 500;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+    text-shadow: 3px 4px 3px #081c69;
+}
+
+.BFCHeader {
+    background: linear-gradient(to right, #5b6284,#f5662f,#f3f3ee,#87f703);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.BFCHeaderB:hover:after {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    Content: "est";
+    color: #f6f6f9;
+    margin: 0px 0px 0px -7px;
+}
+
+.BFCHeaderB:hover {
+}
+
+.BFCHeaderB {
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+    color: #fdc746;
+}
+
+.BFCHeaderF:hover:after {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    Content: "riend";
+    color: #f6f6f9;
+    margin: 0px 0px 0px -7px;
+}
+
+.BFCHeaderF:hover {
+}
+
+.BFCHeaderF {
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+    color: #f5d384;
+}
+
+.BFCHeaderC:hover:after {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    Content: "ricle";
+    color: #f6f6f9;
+    margin: 0px 0px 0px -7px;
+}
+
+.BFCHeaderC:hover {
+}
+
+.BFCHeaderC {
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+    color: #f3dca8;
+}
+
+.BFCHeaderServices {
+    -webkit-transition: 12s; /* Safari */
+    transition: 12s;
+    color: #fbfbfa;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+    .BFCHeaderServices:hover {
+    }
+
+ServicesContent {
+    float: left;
+    margin: 10% 0% 0% 37%;
+    font-size: xx-large;
+    font-weight: 1000;
+    color: #f9920a;
+    -webkit-transition: 8s; /* Safari */
+    transition: 8s;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+
+.ServicesContent {
+    float: left;
+    margin: 3% 2% 0% 3%;
+    max-width: 60%;
+    min-width: 250px;
+    font-size: larger;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+    text-shadow: 0.5px 0.5px 0.5px #98a04f;
+    color: #393a1c
+}
+
+.BFCSubTitles {
+    font-size: x-large;
+    background: linear-gradient(to right, #f7d6d6,#efff00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+    text-shadow: 3px 4px 3px #081c69;
+}
+
+.SubTitlePerposerContent:hover {
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
+    transition: 0.2s;
+}
+
+.SubTitleAimContent:hover {
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
+    transition: 0.2s;
+}
+
+.BFCSubTitles:hover {
+    transition: 0.2s;
+    margin: 0px 5% 0px;
+}
+
+.BFCEachIndividualService {
+    margin: 0.5% 3% 0px;
+    background-color: white;
+    max-width: 30%;
+    min-width: 320px;
+    min-height: 10px;
+    max-height: 500px;
+    overflow: hidden;
+    padding: 10px 10px 10px 10px;
+    transition: 2s;
+    border-top-left-radius: 15px;
+    opacity: 0.9;
+    border-bottom-right-radius: 15px;
+    box-shadow: -5px 5px 5px #203e8b;
+}
+
+.BFCSerVicesHeader {
+    font-size: large;
+    font-weight: 1000;
+    text-align: center;
+    background: linear-gradient(to bottom, #040c00,#f90404,#5cef08);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    margin: 0px 0px 10px 0px;
+}
+
+.BFCServicesCategory {
+    overflow-y: auto;
+    min-height: 0px;
+    max-height: 450px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.BFCEachServices {
+    background-color: white;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    box-shadow: -2px 1px 5px #ca2727;
+    height: 50px;
+    opacity: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ServicesMatter {
+}
+
+.BFCEachServicesImage {
+    float: left;
+    font-size: -webkit-xxx-large;
+    opacity: 1;
+    width: 15.5%;
+    height: 65px;
+    cursor: pointer;
+    margin: -20px 0px 0px 7px;
+    background-color: #00000017;
+    border-radius: 50%;
+}
+
+.ServicesNavigationBar {
+    padding: 0px 5px 5px 5px;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    text-shadow: 0px 0px 8px #8a3d3d;
+    font-size: 19px;
+    color: #23ad23;
+}
+
+.BFCEachServices:hover {
+    transition: 0.3s;
+    background-color: #e4f3e5;
+    box-shadow: -2px 1px 5px #58a763;
+}
+
+.ServicesNavigationBar:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0px 0px 0px #8a3d3d;
+    font-size: 20px;
+    color: #244c24;
+}
+
+
+.GotoTop {
+    overflow: hidden;
+    font-size: xx-large;
+    background: #551a8bad;
+    color: #fdc746;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    position: fixed;
+    border: 0px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 5px #551a8b;
+    transform: rotate(-90deg);
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    animation: topbutton 2s infinite ease-in-out;
+}
+
+    .GotoTop:hover {
+        color: #bb8505;
+        cursor: pointer;
+        -ms-transform: scale(1.1) rotate(-90deg);
+        -webkit-transform: scale(1.1) rotate(-90deg);
+        transform: scale(1.1) rotate(-90deg);
+    }
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+    ::-webkit-scrollbar:hover {
+        width: 7px;
+    }
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cecaca;
+    opacity: 0.8;
+    border-radius: 100px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #615050;
+    }
+
+
+
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes example {
+    0% {
+        transform: rotate(1deg);
+    }
+
+    25% {
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {
+        transform: rotate(1deg);
+    }
+
+    25% {
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+
+@-webkit-keyframes topbutton {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    25% {
+        transform: rotate(-80deg);
+    }
+
+    50% {
+        transform: rotate(-100deg);
+    }
+
+    75% {
+        transform: rotate(-80deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+/* Standard syntax */
+@keyframes topbutton {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    25% {
+        transform: rotate(-80deg);
+    }
+
+    50% {
+        transform: rotate(-100deg);
+    }
+
+    75% {
+        transform: rotate(-80deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}

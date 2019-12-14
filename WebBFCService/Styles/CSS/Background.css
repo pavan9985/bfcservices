@@ -1,0 +1,11 @@
+﻿html, body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../../Rescorces/images/BlueLightStadium.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    /*border-top: 1px solid rgba(128, 128, 128,0.5);  rgba for transparency */
+    /*/border-top-width : 100px;*/
+}
