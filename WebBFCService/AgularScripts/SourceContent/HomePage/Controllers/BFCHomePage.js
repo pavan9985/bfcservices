@@ -11,7 +11,7 @@ function hasValue(inputValue) {
         return false;
     }
 }
-alert("Ok");
+
 
 
 BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
