@@ -63,52 +63,66 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
 
         switch (bfcservicesproviding) {
             case BFCServicesProviding.BfcCarTravelsandPurchases:
-                $scope.DirecctivebfcCarServicesNav = false;
+                //$scope.DirecctivebfcCarServicesNav = true;
                 $scope.DirecctivebfcACWashMachineServicesView = true;
                 $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
                 $scope.DirecctivebfcWoodWorksServicesView = true;
-                $scope.DirecctivebfcPaintingWorksServicesView = true;
-                break;
-            case BFCServicesProviding.BfcACWashingMachineRefrigerators:
-                $scope.DirecctivebfcACWashMachineServicesNav = false;
-                $scope.DirecctivebfcPaintingWorksServicesView = true;
-                $scope.DirecctivebfcWoodWorksServicesView = true;
-                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
-                $scope.DirecctivebfcCarServicesView = true;
-                break;
-            case BFCServicesProviding.BfcDigitalPhotoGraphy:
-                $scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
-                $scope.DirecctivebfcPaintingWorksServicesView = true;
-                $scope.DirecctivebfcWoodWorksServicesView = true;
-                $scope.DirecctivebfcACWashMachineServicesView = true;
-                $scope.DirecctivebfcCarServicesView = true;
-                break;
-            case BFCServicesProviding.BfcWoodWorks:
-                $scope.DirecctivebfcWoodWoorksServicesNav = false;
-                $scope.DirecctivebfcPaintingWorksServicesView = true;
-                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
-                $scope.DirecctivebfcACWashMachineServicesView = true;
-                $scope.DirecctivebfcCarServicesView = true;
-                break;
-            case BFCServicesProviding.BfcPaintingWorks:
-                $scope.DirecctivebfcPaintingWorksServicesNav = false;
-                $scope.DirecctivebfcWoodWorksServicesView = true;
-                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
-                $scope.DirecctivebfcACWashMachineServicesView = true;
-                $scope.DirecctivebfcCarServicesView = true;
-                break;
-            default:
-                $scope.DirecctivebfcWoodWorksServicesView = true;
-                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
-                $scope.DirecctivebfcACWashMachineServicesView = true;
-                $scope.DirecctivebfcCarServicesView = true;
                 $scope.DirecctivebfcPaintingWorksServicesView = true;
 
+                $scope.DirecctivebfcACWashMachineServicesNav = false;
+                $scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
+                $scope.DirecctivebfcWoodWoorksServicesNav = false;
                 $scope.DirecctivebfcPaintingWorksServicesNav = false;
+                break;
+            case BFCServicesProviding.BfcACWashingMachineRefrigerators:
+                //$scope.DirecctivebfcACWashMachineServicesNav = false;
+                $scope.DirecctivebfcPaintingWorksServicesView = true;
+                $scope.DirecctivebfcWoodWorksServicesView = true;
+                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
+                $scope.DirecctivebfcCarServicesView = true;
+
+                $scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
+                $scope.DirecctivebfcWoodWoorksServicesNav = false;
+                $scope.DirecctivebfcPaintingWorksServicesNav = false;
+                $scope.DirecctivebfcCarServicesNav = false;
+                break;
+            case BFCServicesProviding.BfcDigitalPhotoGraphy:
+                //$scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
+                $scope.DirecctivebfcPaintingWorksServicesView = true;
+                $scope.DirecctivebfcWoodWorksServicesView = true;
+                $scope.DirecctivebfcACWashMachineServicesView = true;
+                $scope.DirecctivebfcCarServicesView = true;
+
+                $scope.DirecctivebfcACWashMachineServicesNav = false;
+                $scope.DirecctivebfcWoodWoorksServicesNav = false;
+                $scope.DirecctivebfcPaintingWorksServicesNav = false;
+                $scope.DirecctivebfcCarServicesNav = false;
+                break;
+            case BFCServicesProviding.BfcWoodWorks:
+                //$scope.DirecctivebfcWoodWoorksServicesNav = false;
+                $scope.DirecctivebfcPaintingWorksServicesView = true;
+                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
+                $scope.DirecctivebfcACWashMachineServicesView = true;
+                $scope.DirecctivebfcCarServicesView = true;
+
+                $scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
+                $scope.DirecctivebfcACWashMachineServicesNav = false;
+                $scope.DirecctivebfcPaintingWorksServicesNav = false;
+                $scope.DirecctivebfcCarServicesNav = false;
+                break;
+            case BFCServicesProviding.BfcPaintingWorks:
+                //$scope.DirecctivebfcPaintingWorksServicesNav = false;
+                $scope.DirecctivebfcWoodWorksServicesView = true;
+                $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
+                $scope.DirecctivebfcACWashMachineServicesView = true;
+                $scope.DirecctivebfcCarServicesView = true;
+
                 $scope.DirecctivebfcWoodWoorksServicesNav = false;
                 $scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
                 $scope.DirecctivebfcACWashMachineServicesNav = false;
                 $scope.DirecctivebfcCarServicesNav = false;
+                break;
+            
         }
     };
 
