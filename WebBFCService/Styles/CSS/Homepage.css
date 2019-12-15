@@ -358,6 +358,7 @@ ServicesContent {
 
 
 .GotoTop {
+    display : none;
     overflow: hidden;
     font-size: xx-large;
     background: #551a8bad;

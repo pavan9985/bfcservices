@@ -23,6 +23,21 @@ function hasValue(inputValue) {
 BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
 
 
+    $scope.CrossCancle = function () {
+
+        $scope.DirecctivebfcPaintingWorksServicesView = true;
+        $scope.DirecctivebfcWoodWorksServicesView = true;
+        $scope.DirecctivebfcDigitalPhotoGraphServicesView = true;
+        $scope.DirecctivebfcACWashMachineServicesView = true;
+        $scope.DirecctivebfcCarServicesView = true;
+
+        $scope.DirecctivebfcCarServicesNav = false;
+        $scope.DirecctivebfcACWashMachineServicesNav = false;
+        $scope.DirecctivebfcDigitalPhotoGraphServicesNav = false;
+        $scope.DirecctivebfcWoodWoorksServicesNav = false;
+        $scope.DirecctivebfcPaintingWorksServicesNav = false;
+    }
+
     $scope.CarServices = function () {
 
         $scope.DirecctivebfcCarServicesView = false;

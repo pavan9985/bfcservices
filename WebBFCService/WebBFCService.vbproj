@@ -879,7 +879,7 @@
     <Content Include="Styles\CSS\Background.css" />
     <Content Include="Styles\CSS\BFCViewProfileContactFeeBack.css" />
     <Content Include="Styles\CSS\Homepage.css" />
-    <Content Include="Views\bfcEachServicesProfile\bfcServicesButViewContProf.html" />
+    <Content Include="Views\bfcEachServicesProfile\bfcCarServicesButViewContProf.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
