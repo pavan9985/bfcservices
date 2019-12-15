@@ -49,7 +49,7 @@
 .CrossCancle {
     color: red;
     transition: 0.2s ease-in-out;
-    margin: 2px 8px 0px 0px;
+    margin: 0px 6px 0px 0px;
     width: fit-content;
     float: right;
 }
