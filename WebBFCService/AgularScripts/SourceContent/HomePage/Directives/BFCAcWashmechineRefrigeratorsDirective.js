@@ -3,7 +3,7 @@
         restrict: 'AE',
         transclude: true,
         replace: true,
-        templateUrl: 'Views/bfcEachServicesProfile/bfcAcWashingmechineRefrigeratorsServices.html',
+        templateUrl: 'Views/bfcEachServicesProfile/bfcAcWashingmechineRefrigeratorsServicesButViewContProf.html',
         controller: "BFCAcWmRfgViewProfileContactFeedBackCtrl",//controller to bind
         controllerAs: "vm", bindToController: true,//
         link: function (scope, elm, attrs, ctrl) {
@@ -12,6 +12,9 @@
     })
 }).controller("BFCAcWmRfgViewProfileContactFeedBackCtrl", ['$scope', function ($scope) {
 
-    alert("Ac");
+    $scope.bfcAcWmRfgViewContact = function () {
+
+        alert("tel Num");
+    };
 
 }]);
