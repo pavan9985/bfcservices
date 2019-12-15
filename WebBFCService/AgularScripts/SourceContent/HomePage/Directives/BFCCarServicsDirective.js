@@ -13,5 +13,5 @@
 }).controller("BFCCarViewProfileContactFeedBackCtrl", ['$scope', function ($scope) {
 
     
-    
+    alert("car");
 }]);

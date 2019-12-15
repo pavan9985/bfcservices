@@ -10,7 +10,8 @@
     <script src="Scripts/angular.js"></script>
 
     <script src="AgularScripts/SourceContent/HomePage/Modules/HomePage.js"></script>
-        <script src="AgularScripts/SourceContent/HomePage/Directives/BFCCarServicsDirective.js"></script>
+    <script src="AgularScripts/SourceContent/HomePage/Directives/BFCCarServicsDirective.js"></script>
+    <script src="AgularScripts/SourceContent/HomePage/Directives/BFCAcWashmechineRefrigeratorsDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Controller/BFCHomePage.js"></script>
 
     <title>BFC Services</title>
@@ -114,7 +115,7 @@
                         </div>
 
                         <div class="BFCEachServices">
-                            <bfc-car-service-directive ng-hide="DirecctivebfcACWashMachineServicesView" ng-init="DirecctivebfcACWashMachineServicesView=true"></bfc-car-service-directive>
+                            <bfc-ac-washingmechine-refrigerators-directive ng-hide="DirecctivebfcACWashMachineServicesView" ng-init="DirecctivebfcACWashMachineServicesView=true"></bfc-ac-washingmechine-refrigerators-directive>
                             <div class="ServicesMatter" ng-hide="DirecctivebfcACWashMachineServicesNav" ng-init="DirecctivebfcACWashMachineServicesNav=false">
                                 <div class="BFCEachServicesImage">&#x2620;</div>
                                 <div class="ServicesNavigationBar" ng-click="ACWashMachineService()">

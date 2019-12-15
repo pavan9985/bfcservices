@@ -95,6 +95,7 @@
     <Content Include="AgularScripts\SourceContent\CommonScript\CommonSource.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\bfcCarServices.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\BFCHomePage.js" />
+    <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCAcWashmechineRefrigeratorsDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCCarServicsDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Modules\HomePage.js" />
     <Content Include="index.html" />
@@ -879,7 +880,9 @@
     <Content Include="Styles\CSS\Background.css" />
     <Content Include="Styles\CSS\BFCViewProfileContactFeeBack.css" />
     <Content Include="Styles\CSS\Homepage.css" />
+    <Content Include="Views\bfcEachServicesProfile\bfcAcWashingmechineRefrigeratorsServices.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcCarServicesButViewContProf.html" />
+    <Content Include="Views\bfcEachServicesProfile\bfcDigitalPhotographyServices.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
