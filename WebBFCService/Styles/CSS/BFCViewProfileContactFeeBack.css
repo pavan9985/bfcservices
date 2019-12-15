@@ -12,13 +12,13 @@
 .viewProfile {
     float: left;
     max-width: 22%;
-    max-width: 87px;
-    margin: 0px 0px 0px 15px;
+    max-width: 90px;
+    margin: 0px 8px 0px 5px;
 }
 
 .viewContact {
     float: right;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 5px 0px 8px;
 }
 
 .viewFeedBack {
@@ -30,7 +30,7 @@
     color: orange;
     border: 0px;
     background-color: #3d096f;
-    width: 91px;
+    width: 90px;
     height: 30px;
     text-align: center;
     transition: 0.3s ease-in-out;
