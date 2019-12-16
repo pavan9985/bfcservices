@@ -1,0 +1,27 @@
+﻿.ProfileViewBody {
+    background-color: #e6dede;
+    transition: 0.5s;
+}
+
+.ProfileviewPictureMatter {
+    background-color: red;
+    width: 60%;
+    min-width: 100%;
+    margin: 0px 0px 0px 10px;
+}
+
+.ProfileviewPicture {
+    background-color: yellow;
+    height: 500px;
+    width: 100%;
+}
+
+.ProfilePicture {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    border: 2px;
+    border-radius: 50%;
+    border-style: double;
+    float: left;
+}
