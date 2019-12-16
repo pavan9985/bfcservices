@@ -79,8 +79,8 @@
                 <b>Services</b>
             </label>
         </div>
-        <bfc-car-main-profile-view ng-hide=""></bfc-car-main-profile-view>
-        <div class="BFCBodyContent">
+        <bfc-car-main-profile-view ng-hide="bfcMainProfileViewHideDirective" ng-init="bfcMainProfileViewHideDirective=true"></bfc-car-main-profile-view>
+        <div class="BFCBodyContent" ng-hide="bfcHomePageViewHideBodyContent">
 
             <div class="ServicesContent">
                 <div class="BFCSubTitles">Purpose &#x205A;</div>

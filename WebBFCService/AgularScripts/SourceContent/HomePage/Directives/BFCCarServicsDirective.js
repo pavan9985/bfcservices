@@ -12,6 +12,10 @@
     })
 }).controller("BFCCarViewProfileContactFeedBackCtrl", ['$scope', function ($scope) {
 
-    
-    
+    $scope.bfcCarProfileView = function () {
+
+        $scope.bfcHomePageViewHideBodyContent = true;
+        $scope.bfcMainProfileViewHideDirective = false;
+    };
+
 }]);

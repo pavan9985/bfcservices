@@ -1,27 +1,50 @@
 ﻿.ProfileViewBody {
-    background-color: #e6dede;
-    transition: 0.5s;
-    width: 100%:
+    background-color: #3f6763cf;
+    transition: 1s;
 }
 
 .ProfileviewPictureMatter {
-    background-color: red;
-    width: 60%;
+    bbackground-color: red;
+    width: 70%;
+    margin: auto;
+    transition: 1s;
 }
 
 .ProfileviewPicture {
-    background-color: yellow;
-    height: 500px;
+    background-color: #5f5f5d;
     width: 100%;
-    padding: 20px 0px 0px 60px;
+    padding: 0px 0px 30px 10px;
+    transition: 1s;
 }
 
 .ProfilePicture {
     background-color: green;
+    margin: 20px 0px 20px 0px;
     width: 30%;
     height: 50%;
     border: 2px;
     border-radius: 50%;
     border-style: double;
     min-width: 190px;
+    cursor: pointer;
+}
+
+.ProfileMatter {
+    word-wrap: break-word;
+    color: white;
+}
+
+.ProfileButtons {
+    margin: 0px 0px 15px 0px;
+    width: 100%;
+}
+
+.Actionsbutton {
+    width: 32%;
+    color: white;
+    background-color: #3d096f;
+    border: 0px;
+    height: 35px;
+    border-radius: 20%;
+    cursor: pointer;
 }
