@@ -141,5 +141,8 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
         }
     };
 
-
+    $scope.CrossCancleProfileView = function () {
+        $scope.bfcMainProfileViewHideDirective = true;
+        $scope.bfcHomePageViewHideBodyContent = false;
+    };
 }]);

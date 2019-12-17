@@ -92,7 +92,6 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AgularScripts\SourceContent\bfcMainProfileView\Directives\bfcCarMainProfileView.js" />
     <Content Include="AgularScripts\SourceContent\CommonScript\CommonSource.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\bfcCarServices.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\BFCHomePage.js" />
@@ -891,7 +890,11 @@
     <Content Include="Views\bfcEachServicesProfile\bfcDigitalPhotographyServicesButViewContProf.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcPaintingworksServicesButViewContProf.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcWoodWorksServicesButViewContProf.html" />
+    <Content Include="Views\bfcProfileViewDivs\bfcAcWmServiceProfileView.html" />
     <Content Include="Views\bfcProfileViewDivs\bfcCarServicesProfileView.html" />
+    <Content Include="Views\bfcProfileViewDivs\bfcDigitalPhotographyProfileView.html" />
+    <Content Include="Views\bfcProfileViewDivs\bfcPaintingWoorksProfileView.html" />
+    <Content Include="Views\bfcProfileViewDivs\bfcWoodWorksProfileView.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -956,6 +959,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AgularScripts\SourceContent\bfcMainProfileView\" />
     <Folder Include="AgularScripts\SupportingScript\" />
     <Folder Include="Rescorces\Fonts\" />
   </ItemGroup>

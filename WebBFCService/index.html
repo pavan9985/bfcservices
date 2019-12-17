@@ -8,6 +8,7 @@
     <link href="Styles/CSS/Homepage.css" rel="stylesheet" />
     <script src="AgularScripts/SourceContent/CommonScript/CommonSource.js"></script>
     <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
 
     <script src="AgularScripts/SourceContent/HomePage/Modules/HomePage.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCCarServicsDirective.js"></script>
@@ -15,7 +16,6 @@
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCDigitalPhotographyServicesDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCWoodWorksDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCPaintingworksDirective.js"></script>
-    <script src="AgularScripts/SourceContent/bfcMainProfileView/Directives/bfcCarMainProfileView.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Controller/BFCHomePage.js"></script>
 
     <title>BFC Services</title>
@@ -79,7 +79,8 @@
                 <b>Services</b>
             </label>
         </div>
-        <bfc-car-main-profile-view ng-hide="bfcMainProfileViewHideDirective" ng-init="bfcMainProfileViewHideDirective=true"></bfc-car-main-profile-view>
+        <!--<bfc-car-main-profile-view ng-hide="bfcMainProfileViewHideDirective" ng-init="bfcMainProfileViewHideDirective=true"></bfc-car-main-profile-view>-->
+        <ng-view ng-hide="bfcMainProfileViewHideDirective" ng-init="bfcMainProfileViewHideDirective=true"></ng-view>
         <div class="BFCBodyContent" ng-hide="bfcHomePageViewHideBodyContent">
 
             <div class="ServicesContent">
@@ -101,7 +102,7 @@
                     </div>
                 </p>
             </div>
-            <div class="BFCEachIndividualService">
+            <div class="BFCEachIndividualService" id="bfcProvidingTab">
                 <div class="BFCSerVicesHeader">BFC Providing</div>
                 <div class="ScrollbelContent">
                     <div class="BFCServicesCategory">
@@ -178,8 +179,8 @@
 
 
         <!--<input id="UserID" type="text" placeholder="Enter" />
-        <input id="UserPassword" type="password" placeholder="Password"/>
-        <button title="Login" onclick="OnClick()">Login</button>
-        <input id="ResultField" type="text"/>-->
+    <input id="UserPassword" type="password" placeholder="Password"/>
+    <button title="Login" onclick="OnClick()">Login</button>
+    <input id="ResultField" type="text"/>-->
 </body>
 </html>

@@ -14,7 +14,7 @@
 
     $scope.bfcAcWmRfgViewContact = function () {
 
-        alert("tel Num");
+
     };
 
 }]);
