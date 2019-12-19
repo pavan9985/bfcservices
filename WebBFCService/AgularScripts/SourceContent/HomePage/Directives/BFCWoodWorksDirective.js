@@ -12,9 +12,6 @@
     })
 }).controller("BFCWoodworksViewProfileContactFeedBackCtrl", ['$scope', function ($scope) {
 
-    $scope.bfcWoodworksViewProfile = function () {
 
-
-    }
 
 }]);

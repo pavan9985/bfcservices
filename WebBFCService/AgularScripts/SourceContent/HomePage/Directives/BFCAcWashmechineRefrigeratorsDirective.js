@@ -12,9 +12,6 @@
     })
 }).controller("BFCAcWmRfgViewProfileContactFeedBackCtrl", ['$scope', function ($scope) {
 
-    $scope.bfcAcWmRfgViewContact = function () {
-
-
-    };
+    
 
 }]);

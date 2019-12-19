@@ -305,14 +305,24 @@ ServicesContent {
     padding: 5px 5px 5px 5px;
 }
 
+.RatingStarsOnEachServices {
+    margin: -35px 0px 0px 35%;
+    height: 20px;
+    width: 40%;
+    font-size: large;
+}
+
+.BFCServicesContentMatter {
+    margin: 10px 0px 0px 0px;
+}
 
 .BFCEachServices {
     background-color: white;
     text-align: center;
-    padding: 25px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     margin: 0px 0px 10px 0px;
     box-shadow: -2px 1px 5px #ca2727;
-    height: 50px;
+    height: 40px;
     opacity: 1;
     overflow: hidden;
     cursor: pointer;
@@ -328,7 +338,7 @@ ServicesContent {
     width: 15.5%;
     height: 65px;
     cursor: pointer;
-    margin: -20px 0px 0px 7px;
+    margin: 0px 0px 0px 7px;
     background-color: #00000017;
     border-radius: 50%;
 }
@@ -336,7 +346,7 @@ ServicesContent {
 .ServicesNavigationBar {
     padding: 0px 5px 5px 5px;
     float: right;
-    margin: 0px 10px 0px 0px;
+    margin: 25px 10px 0px 0px;
     text-shadow: 0px 0px 8px #8a3d3d;
     font-size: 19px;
     color: #23ad23;
@@ -358,7 +368,7 @@ ServicesContent {
 
 
 .GotoTop {
-    display : none;
+    display: none;
     overflow: hidden;
     font-size: xx-large;
     background: #551a8bad;

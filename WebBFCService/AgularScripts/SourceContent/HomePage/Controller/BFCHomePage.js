@@ -1,12 +1,23 @@
 ﻿'use strict';
 
+//var BFCServicesProviding = {
+
+//    BfcCarTravelsandPurchases: 1,
+//    BfcACWashingMachineRefrigerators: 2,
+//    BfcDigitalPhotoGraphy: 3,
+//    BfcWoodWorks: 4,
+//    BfcPaintingWorks: 5,
+
+//};
+
+
 var BFCServicesProviding = {
 
-    BfcCarTravelsandPurchases: 1,
-    BfcACWashingMachineRefrigerators: 2,
-    BfcDigitalPhotoGraphy: 3,
-    BfcWoodWorks: 4,
-    BfcPaintingWorks: 5,
+    BfcCarTravelsandPurchases: "BfcCarTravelsandPurchases",
+    BfcACWashingMachineRefrigerators: "BfcACWashingMachineRefrigerators",
+    BfcDigitalPhotoGraphy: "BfcDigitalPhotoGraphy",
+    BfcWoodWorks: "BfcWoodWorks",
+    BfcPaintingWorks: "BfcPaintingWorks",
 
 };
 
@@ -137,7 +148,7 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
                 $scope.DirecctivebfcACWashMachineServicesNav = false;
                 $scope.DirecctivebfcCarServicesNav = false;
                 break;
-            
+
         }
     };
 
@@ -145,4 +156,52 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
         $scope.bfcMainProfileViewHideDirective = true;
         $scope.bfcHomePageViewHideBodyContent = false;
     };
+
+    $scope.CurrentstartFunction = function (Servicesnumber) {
+        var CurrentStarIdValue;
+        for (var StartIndex = 1; StartIndex <= 5; StartIndex++) {
+            CurrentStarIdValue = CurrentServicesName(Servicesnumber) + "star" + StartIndex.toString();
+            if (StartIndex <= $scope.StarclickNumber) {
+                
+                document.getElementById(CurrentStarIdValue).style.color = "gold";
+            }
+            else {
+                document.getElementById(CurrentStarIdValue).style.color = "#7b7f86";
+            }
+        }
+    };
+
+
+    function CurrentServicesName(Servicenumber) {
+
+        var BFCCurentServicesName;
+        try {
+
+            switch (Servicenumber) {
+
+                case 1:
+                    return BFCCurentServicesName = BFCServicesProviding.BfcCarTravelsandPurchases.toString();
+                    break;
+                case 2:
+                    return BFCCurentServicesName = BFCServicesProviding.BfcACWashingMachineRefrigerators.toString();
+                    break;
+                case 3:
+                    return BFCCurentServicesName = BFCServicesProviding.BfcDigitalPhotoGraphy.toString();
+                    break;
+                case 4:
+                    return BFCCurentServicesName = BFCServicesProviding.BfcWoodWorks.toString();
+                    break;
+                case 5:
+                    return BFCCurentServicesName = BFCServicesProviding.BfcPaintingWorks.toString();
+                    break;
+                default:
+                    break;
+            }
+
+        } catch (e) {
+
+        }
+
+
+    }
 }]);
