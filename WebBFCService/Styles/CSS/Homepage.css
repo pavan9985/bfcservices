@@ -306,9 +306,10 @@ ServicesContent {
 }
 
 .RatingStarsOnEachServices {
-    margin: -35px 0px 0px 35%;
+    margin: -36px 0px 0px 35%;
     height: 20px;
     width: 40%;
+    min-width: 50px;
     font-size: large;
 }
 
