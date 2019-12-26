@@ -270,10 +270,10 @@ ServicesContent {
 }
 
 .BFCEachIndividualService {
-    margin: 0.5% 3% 0px;
+    margin: 1% 0% 0px 2px;
     background-color: white;
-    max-width: 30%;
-    min-width: 320px;
+    max-width: 34%;
+    min-width: 330px;
     min-height: 10px;
     max-height: 500px;
     overflow: hidden;
