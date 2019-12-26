@@ -51,10 +51,10 @@
     height: 30px;
     max-width: 300px;
     z-index: 1;
-    min-width: 260px;
+    min-width: 300px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-image: linear-gradient(to bottom, #ff9800, #fffdfdb8, #1fab2b73);
+    background-image: linear-gradient(to bottom, #ff9800, #fffdfdb8, #b2cab473);
 }
 
 .SocialMedialEachitem {
