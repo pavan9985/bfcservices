@@ -1,5 +1,5 @@
 ﻿.ProfileViewBody {
-    background-color: #3f6763cf;
+    background-color: #5e633bcf;
     transition: 1s;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .ProfileviewPicture {
-    background-color: #5f5f5d;
+    background-color: #3a3c20;
     width: 100%;
     padding: 0px 0px 30px 10px;
     transition: 1s;

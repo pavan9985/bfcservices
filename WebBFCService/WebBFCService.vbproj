@@ -101,6 +101,9 @@
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCPaintingworksDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCWoodWorksDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Modules\HomePage.js" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="index.html" />
     <Content Include="Rescorces\images\All_Sports_Images.jpg" />
     <Content Include="Rescorces\images\BlueLightStadium.jpg" />
@@ -927,6 +930,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
