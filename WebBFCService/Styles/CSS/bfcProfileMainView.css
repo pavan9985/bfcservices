@@ -34,17 +34,15 @@
     color: white;
 }
 
-.ProfilePersonContactNavgation {
-    margin: 0px 0px 0px 20px;
-}
-
-.paddingclass {
-    padding: 0px 0px 15px 0px;
-}
-
 .ProfileButtons {
     margin: 0px 0px 15px 0px;
     width: 100%;
+}
+
+.DetailsSubHeaddingMatter {
+    width: 33.33%;
+    float: left;
+    text-align: center;
 }
 
 .Actionsbutton {
