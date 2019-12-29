@@ -54,3 +54,141 @@
     border-radius: 20%;
     cursor: pointer;
 }
+
+.DetailsSubHeaddingMatter {
+    animation: BFCText 3s infinite ease-in-out;
+    -moz-animation: BFCText 3s infinite ease-in-out;
+    -webkit-animation: BFCText 3s infinite ease-in-out;
+    -o-animation: BFCText 3s infinite ease-in-out;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    -o-animation-delay: 2s;
+}
+
+    .DetailsSubHeaddingMatter:hover {
+        animation: none;
+        -moz-animation: none;
+        -webkit-animation: none;
+        -o-animation: none;
+    }
+
+.BFCLigntInEffect {
+    animation: FCText 4s infinite ease-in-out;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+}
+
+
+
+@-webkit-keyframes BFCText {
+    0% {
+        color: white;
+        -ms-transform: scale(1.5) rotate(0deg);
+        -webkit-transform: scale(1.5) rotate(0deg);
+        transform: scale(1.5) rotate(0deg);
+    }
+
+    25% {
+        color: #10ff00;
+        -ms-transform: scale(1.1) rotate(10deg);
+        -webkit-transform: scale(1.1) rotate(10deg);
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    50% {
+        color: white;
+        -ms-transform: scale(1.1) rotate(-10deg);
+        -webkit-transform: scale(1.1) rotate(-10deg);
+        transform: scale(1.1) rotate(-10deg);
+    }
+
+    75% {
+        color: #00ff03;
+        -ms-transform: scale(1.1) rotate(10deg);
+        -webkit-transform: scale(1.1) rotate(10deg);
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    100% {
+        color: white;
+        -ms-transform: scale(1.1) rotate(0deg);
+        -webkit-transform: scale(1.1) rotate(0deg);
+        transform: scale(1.1) rotate(0deg);
+    }
+}
+
+/* Standard syntax */
+@keyframes BFCText {
+
+    0% {
+        color: white;
+        -ms-transform: scale(1.5) rotate(0deg);
+        -webkit-transform: scale(1.5) rotate(0deg);
+        transform: scale(1.5) rotate(0deg);
+    }
+
+    25% {
+        color: #10ff00;
+        -ms-transform: scale(1.1) rotate(10deg);
+        -webkit-transform: scale(1.1) rotate(10deg);
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    50% {
+        color: white;
+        -ms-transform: scale(1.1) rotate(-10deg);
+        -webkit-transform: scale(1.1) rotate(-10deg);
+        transform: scale(1.1) rotate(-10deg);
+    }
+
+    75% {
+        color: #00ff03;
+        -ms-transform: scale(1.1) rotate(10deg);
+        -webkit-transform: scale(1.1) rotate(10deg);
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    100% {
+        color: white;
+        -ms-transform: scale(1.1) rotate(0deg);
+        -webkit-transform: scale(1.1) rotate(0deg);
+        transform: scale(1.1) rotate(0deg);
+    }
+}
+
+@-moz-keyframes BFCText {
+    0% {
+        color: white;
+        -ms-transform: scale(1.5) rotate(0deg);
+        -webkit-transform: scale(1.5) rotate(0deg);
+        transform: scale(1.5) rotate(0deg);
+    }
+
+    25% {
+        color: #10ff00;
+        -ms-transform: scale(1.1) rotate(10deg);
+        -webkit-transform: scale(1.1) rotate(10deg);
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    50% {
+        color: white;
+        -ms-transform: scale(1.1) rotate(-10deg);
+        -webkit-transform: scale(1.1) rotate(-10deg);
+        transform: scale(1.1) rotate(-10deg);
+    }
+
+    75% {
+        color: #00ff03;
+        -ms-transform: scale(1.1) rotate(10deg);
+        -webkit-transform: scale(1.1) rotate(10deg);
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    100% {
+        color: white;
+        -ms-transform: scale(1.1) rotate(0deg);
+        -webkit-transform: scale(1.1) rotate(0deg);
+        transform: scale(1.1) rotate(0deg);
+    }
+}

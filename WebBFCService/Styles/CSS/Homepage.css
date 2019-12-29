@@ -393,7 +393,7 @@ ServicesContent {
 }
 
     .GotoTop:hover {
-        color: #bb8505;
+         
         cursor: pointer;
         -ms-transform: scale(1.1) rotate(-90deg);
         -webkit-transform: scale(1.1) rotate(-90deg);

@@ -1,58 +1,83 @@
 ﻿
-    <div style="margin:0;padding:0;border:0;">
-        <style>
-            .SubheddingLocation:hover::before {
-                transition: 0.5s;
-                cursor: pointer;
-                color: #aef583;
-                font-size : medium;
-                content: "Location";
-            }
-            .SubheddingContacNumber:hover::before {
-                transition: 0.5s;
-                cursor: pointer;
-                color: #aef583;
-                font-size : medium;
-                content: "8497977911";
-            }
-            .SubheddingPersonName:hover::before {
-                transition: 0.5s;
-                cursor: pointer;
-                color: #aef583;
-                font-size : xx-small;
-                content: "Songa Tarun Tarun Tarun";
-            }
-        </style>
-        <link ng-href="Content/font-awesome.min.css" rel="stylesheet" />
-        <link ng-href="Styles/CSS/bfcProfileMainView.css" rel="stylesheet" />
-        <div class="mainProfileViewDiv" id="BfcServicesProfileViewofEach">
-            <div class="ProfileViewBody">
-                <a href="#bfcProvidingTab"><div class="CrossCancle" ng-click="CrossCancleProfileView()" style="font-size:large; margin: 0px 10px 0px 0px">&#10005;</div></a>
-                <div class="ProfileviewPictureMatter">
+<div style="margin:0;padding:0;border:0;">
+    <style>
+        .SubheddingLocation:hover::before {
+            animation: none;
+            transition: 0.5s;
+            cursor: pointer;
+            color: #aef583;
+            font-size: medium;
+            content: "Location";
+        }
 
-                    <div class="ProfileviewPicture">
-                        <img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ProfilePicture" alt="BFC Tharun"></img>
-                        <div class="ProfileButtons">
-                            <button class="Actionsbutton">Hire Service</button>
-                            <button class="Actionsbutton">FeedBack</button>
-                            <button class="Actionsbutton">Rate Service</button>
+
+        .SubheddingContacNumber:hover::before {
+            animation: none;
+            transition: 0.5s;
+            cursor: pointer;
+            color: #aef583;
+            font-size: medium;
+            content: "8497977911";
+            animation: none;
+        }
+
+
+        .SubheddingPersonName:hover::before {
+            animation: none;
+            transition: 0.5s;
+            cursor: pointer;
+            color: #aef583;
+            font-size: medium;
+            content: "Songa Tharun";
+            animation: none;
+        }
+    </style>
+    <link ng-href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link ng-href="Styles/CSS/bfcProfileMainView.css" rel="stylesheet" />
+    <div class="mainProfileViewDiv" id="BfcServicesProfileViewofEach">
+        <div class="ProfileViewBody">
+            <a href="#bfcProvidingTab"><div class="CrossCancle" ng-click="CrossCancleProfileView()" style="font-size:large; margin: 0px 10px 0px 0px">&#10005;</div></a>
+            <div class="ProfileviewPictureMatter">
+
+                <div class="ProfileviewPicture">
+                    <img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ProfilePicture" alt="BFC Tharun"></img>
+                    <div class="ProfileButtons">
+                        <button class="Actionsbutton">Hire Service</button>
+                        <button class="Actionsbutton">FeedBack</button>
+                        <button class="Actionsbutton">Rate Service</button>
+                    </div>
+                    <div class="ProfileMatter">
+                        <div><h3 align="center" style="color:white;"><b>Digital Photography</b></h3></div><br />
+                        <div class="ProfilePersonContactNavgation">
+                            <div class="DetailsSubHeaddingMatter">
+                                <div><label style="color:ghostwhite; font-size:larger; color:#71ff70;" class="fa fa-user-circle SubheddingPersonName"></label></div><br />
+                                <!--<div><label style="color:goldenrod;font-size:large;">&emsp;Songa Tharun</label></div><br />-->
+                            </div>
+                            <div class="DetailsSubHeaddingMatter">
+                                <div><a href="tel:8497977911" style="color:goldenrod;text-decoration:none;"><label style="color:ghostwhite; font-size:larger; color:#71ff70;" class="fa fa-volume-control-phone SubheddingContacNumber"></label></a></div><br />
+                                <!--<div><label style="font-size:large;"><a href="tel:8497977911" style="color:goldenrod;text-decoration:none;">&emsp;8497977911</a></label></div><br />-->
+                            </div>
+                            <div class="DetailsSubHeaddingMatter">
+                                <div><a href="https://www.google.com/maps/@16.4437692,80.5595164,20z" style="text-decoration:none;"><label style="color:ghostwhite; font-size:larger; color:#71ff70;" class="fa fa-location-arrow SubheddingLocation"></label></a></div><br />
+
+                                <!--<div><label style="font-size:large;color:goldenrod;">&emsp;<b style="color:palegoldenrod;">For U Digital Photo Studio</b>, Nauluru Road, Mangalagiri, India 522503.</label></div>-->
+                            </div><br /><br /><br /><br />
                         </div>
-                        <div class="ProfileMatter">
-                            <div><h3 align="center" style="color:white;"><b>Digital Photography</b></h3></div><br />
-                            <div class="ProfilePersonContactNavgation">
-                                <div class="DetailsSubHeaddingMatter">
-                                    <div><label style="color:ghostwhite; font-size:larger;" class="fa fa-user-circle SubheddingPersonName"></label></div><br />
-                                    <!--<div><label style="color:goldenrod;font-size:large;">&emsp;Songa Tharun</label></div><br />-->
+                        <div>
+                            <div class="BFCEachProfileViewMatterAboutProfile" style="text-indent: 50px;">
+                                <div class="BFCTextContainerEffect">
+                                    <span class="BFCLigntInEffect BClassEffects" style="font-size:larger;">
+                                        B
+                                    </span>
+                                    <span class="BFCLigntInEffect FClassEffects" style="font-size:larger;">
+                                        F
+                                    </span>
+                                    <span class="BFCLigntInEffect CClassEffects" style="font-size:larger;">
+                                        C
+                                    </span>
+                                    <span> The thing we believe over profit is your comfort, We provide the best photographic work at low price, Treading Photography’s have passion in today’s world, Some may the professions at this work, We are combining the  both work and profession at same place where you can find the Best Digital Photography Works.</span>
                                 </div>
-                                <div class="DetailsSubHeaddingMatter">
-                                    <div><a href="tel:8497977911" style="color:goldenrod;text-decoration:none;"><label style="color:ghostwhite; font-size:larger;" class="fa fa-volume-control-phone SubheddingContacNumber"></label></a></div><br />
-                                    <!--<div><label style="font-size:large;"><a href="tel:8497977911" style="color:goldenrod;text-decoration:none;">&emsp;8497977911</a></label></div><br />-->
-                                </div>
-                                <div class="DetailsSubHeaddingMatter">
-                                    <div><a href="https://www.google.com/maps/@16.4437692,80.5595164,20z" style="text-decoration:none;"><label style="color:ghostwhite; font-size:larger; " class="fa fa-location-arrow SubheddingLocation"></label></a></div>
 
-                                    <!--<div><label style="font-size:large;color:goldenrod;">&emsp;<b style="color:palegoldenrod;">For U Digital Photo Studio</b>, Nauluru Road, Mangalagiri, India 522503.</label></div>-->
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -60,3 +85,4 @@
             </div>
         </div>
     </div>
+</div>
