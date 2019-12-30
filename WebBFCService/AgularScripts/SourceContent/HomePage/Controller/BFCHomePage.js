@@ -32,7 +32,7 @@ function hasValue(inputValue) {
 }
 
 BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
-
+    $scope.bfcHomePageViewHideBodyContent = false;
 
     $scope.CrossCancle = function () {
 
