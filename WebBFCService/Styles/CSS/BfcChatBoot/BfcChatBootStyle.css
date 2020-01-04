@@ -1,0 +1,115 @@
+﻿.BfcChatBootPopup {
+    position: fixed;
+    background-color: red;
+}
+
+.BfcChatBootPopup {
+    position: fixed;
+    z-index: 99;
+    width: 45%;
+    height: 50%;
+    background-color: white;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.BfcChatBootMain {
+    padding: 18px 0px 0px 0px;
+}
+
+.BfcChatBootHeader {
+    background-color: #4d5583;
+    padding: 5px;
+}
+
+.ChatbootHeaderMatter {
+    float: left;
+}
+
+.ChatbootHeaderSupport {
+    text-align: right;
+}
+
+.BfcChatbootBody {
+    background-color: #626da9;
+}
+
+.ChatbootMessageBody {
+    padding: 10px;
+}
+
+
+.ChatbootReceiverMessage {
+    text-align: left;
+    background-color: #5a649a;
+    word-wrap: break-word;
+    margin: 0px 0px 8px 0px;
+    padding: 5px;
+    border-radius: 30px 30px 30px 0px;
+}
+
+.ChatbootReceiverMessageIcon {
+    height: 50px;
+    width: 8%;
+    border-radius: 50%;
+    float: left;
+    background-color: white;
+    margin: 0px 15px 5px 0px;
+}
+
+.ChatbootReceiverMessageText {
+}
+
+
+
+
+
+
+
+.ChatbootSenderMessage {
+    text-align: right;
+    background-color: #545d8e;
+    margin: 0px 0px 8px 0px;
+    padding: 5px;
+    border-radius: 30px 30px 0px 30px;
+}
+
+.ChatbootSenderMessageIcon {
+    height: 50px;
+    width: 8%;
+    border-radius: 50%;
+    float: right;
+    background-color: white;
+    margin: 0px 0px 5px 15px;
+}
+
+.ChatbootReceiverMessageText {
+}
+
+
+
+
+
+.Chatboottypingtext {
+    background-color: #4d5583;
+    padding: 4px;
+}
+
+.inputTextBoxChatboot {
+    width: 80%;
+    background-color: #8796e8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.MessageSendBut {
+    border-radius: 10px;
+    border: none;
+}
+
+    .MessageSendBut:hover {
+        color: green;
+    }

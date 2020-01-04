@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <!--<link href="Content/bootstrap.min.css" rel="stylesheet" />-->
-
     <!--                                Css Files                                       -->
     <link href="Styles/CSS/Background.css" rel="stylesheet" />
     <link href="Styles/CSS/Homepage.css" rel="stylesheet" />
@@ -28,15 +27,17 @@
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCDigitalPhotographyServicesDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCWoodWorksDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCPaintingworksDirective.js"></script>
+    <script src="AgularScripts/SourceContent/HomePage/Directives/BfcChatboot/BfcChatBootDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Controller/BFCHomePage.js"></script>
 
     <title>BFC Services</title>
 </head>
 <body ng-app="BFCHomePage" ng-controller="BFCHomeCtrl">
 
-
+    
     <div class="GoTop">
-        <button onclick="GotoTop()" class="GotoTop" id="GoTop"><div class="GotopArrow fa" style="text-align:center;">&#xf064;</div></button>
+        <bfc-chat-boot-directive ng-hide="BfcChatbootShowHide" ng-init="BfcChatbootShowHide=true"></bfc-chat-boot-directive>
+        <button ng-click="BfcChatbootShowHide = false;BfcChatbootHomePageIcon = true" class="GotoTop" id="GoTop" ng-hide="BfcChatbootHomePageIcon" ng-init="BfcChatbootHomePageIcon=false"><div class="GotopArrow fa" style="text-align:center;">&#xf064;</div></button>
     </div>
     <div id="bordertop">
 

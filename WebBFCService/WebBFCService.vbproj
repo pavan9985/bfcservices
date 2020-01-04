@@ -99,6 +99,7 @@
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\BFCHomePage.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCAcWashmechineRefrigeratorsDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCCarServicsDirective.js" />
+    <Content Include="AgularScripts\SourceContent\HomePage\Directives\BfcChatboot\BfcChatBootDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCDigitalPhotographyServicesDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCPaintingworksDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCWoodWorksDirective.js" />
@@ -992,9 +993,11 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Styles\CSS\Background.css" />
+    <Content Include="Styles\CSS\BfcChatBoot\BfcChatBootStyle.css" />
     <Content Include="Styles\CSS\bfcProfileMainView.css" />
     <Content Include="Styles\CSS\BFCViewProfileContactFeeBack.css" />
     <Content Include="Styles\CSS\Homepage.css" />
+    <Content Include="Views\BfcChatBoot\BFCChatBootPopUp.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcAcWashingmechineRefrigeratorsServicesButViewContProf.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcCarServicesButViewContProf.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcDigitalPhotographyServicesButViewContProf.html" />
