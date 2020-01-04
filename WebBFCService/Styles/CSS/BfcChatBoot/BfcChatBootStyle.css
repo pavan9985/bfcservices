@@ -6,11 +6,12 @@
 .BfcChatBootPopup {
     position: fixed;
     z-index: 99;
-    width: 45%;
+    min-width: 50%;
+    max-width: 50%;
     height: 50%;
     background-color: white;
     color: white;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     border-radius: 10px 10px 10px 10px;
 }
@@ -52,7 +53,7 @@
 
 .ChatbootReceiverMessageIcon {
     height: 50px;
-    width: 8%;
+    min-width: 8%;
     border-radius: 50%;
     float: left;
     background-color: white;
@@ -78,7 +79,7 @@
 
 .ChatbootSenderMessageIcon {
     height: 50px;
-    width: 8%;
+    min-width: 8%;
     border-radius: 50%;
     float: right;
     background-color: white;
