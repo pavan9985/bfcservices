@@ -1,17 +1,16 @@
 ﻿.BfcChatBootPopup {
-    position: fixed;
+    position: absolute;
     background-color: red;
 }
 
 .BfcChatBootPopup {
-    position: fixed;
+    position: absolute;
     z-index: 99;
-    min-width: 50%;
+    min-width: 60%;
     max-width: 50%;
-    height: 50%;
     background-color: white;
     color: white;
-    bottom: 50px;
+    bottom: 10px;
     right: 20px;
     border-radius: 10px 10px 10px 10px;
 }
