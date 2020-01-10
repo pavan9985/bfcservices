@@ -65,6 +65,7 @@
                 return gapi.client.request({
                     'path': 'https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5841487587555426:detectIntent',
                     'method': 'POST',
+                    'headers': "{'Authorization': 'Bearer d318896f9ebc46fc898922b7278d6dca'}",
                     'body': "{ 'query_input': { 'text': { 'text': 'hii', 'language_code': 'en- US' } } }",
                 })
             }).then(function (response) {
