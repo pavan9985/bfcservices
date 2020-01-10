@@ -38,6 +38,7 @@
 
 .ChatbootMessageBody {
     padding: 10px;
+    overflow: scroll;
 }
 
 
@@ -87,9 +88,6 @@
 
 .ChatbootReceiverMessageText {
 }
-
-
-
 
 
 .Chatboottypingtext {

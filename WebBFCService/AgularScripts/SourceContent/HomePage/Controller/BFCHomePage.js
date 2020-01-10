@@ -31,7 +31,7 @@ function hasValue(inputValue) {
     }
 }
 
-BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
+BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $http) {
     $scope.bfcHomePageViewHideBodyContent = false;
 
     $scope.CrossCancle = function () {
@@ -162,7 +162,7 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
         for (var StartIndex = 1; StartIndex <= 5; StartIndex++) {
             CurrentStarIdValue = CurrentServicesName(Servicesnumber) + "star" + StartIndex.toString();
             if (StartIndex <= $scope.StarclickNumber) {
-                
+
                 document.getElementById(CurrentStarIdValue).style.color = "gold";
             }
             else {
@@ -204,4 +204,22 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', function ($scope) {
 
 
     }
+
+
+    $scope.restCall = function (url, data) {
+        var postData;
+        if (hasValue(data)) {
+            postData = JSON.stringify(data);
+        }
+        else {
+            return;
+        }
+        $http.post(url, JSON.stringify(data)).then(function (response) {
+            if (response.data) {
+
+            }
+        });
+    };
+
+    
 }]);
