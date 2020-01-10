@@ -63,7 +63,9 @@
             }).then(function () {
                 // 3. Initialize and make the API request.
                 return gapi.client.request({
-                    'path': 'https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5225487587555426:detectIntent',
+                    'path': 'https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5841487587555426:detectIntent',
+                    'method': 'POST',
+                    'body': "{ 'query_input': { 'text': { 'text': 'hii', 'language_code': 'en- US' } } }",
                 })
             }).then(function (response) {
                 console.log(response.result);
