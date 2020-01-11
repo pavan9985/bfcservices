@@ -14,7 +14,7 @@
 }).controller("BfcChatBootController", ['$scope', function ($scope) {
 
     var GooleDilogFlowBaseURL = "https://dilogflow.googleapis.com/v2/";
-    var GoolgeDiglogFlowClientToken = "d318896f9ebc46fc898922b7278d6dca";
+    var GoolgeDiglogFlowClientToken = "334572477511-nd15dr112ttp11aidphh8f3uh47cen01.apps.googleusercontent.com";
 
 
     $scope.CrossCancleChatBoot = function () {
@@ -54,42 +54,76 @@
         if (!hasValue(ChatMessagetoSend)) {
             return;
         }
-        gapi.load('client', function () {
-            gapi.client.init({
-                'apiKey': 'AIzaSyB1t_tpo-If37RlO8k0D83LggZq2Z7nEuw',
-                // clientId and scope are optional if auth is not required.
-                'clientId': '334572477511-nd15dr112ttp11aidphh8f3uh47cen01.apps.googleusercontent.com',
-                'scope': 'profile',
-            }).then(function () {
-                // 3. Initialize and make the API request.
-                return gapi.client.request({
-                    'path': 'https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5841487587555426:detectIntent',
-                    'method': 'POST',
-                    'headers': "{'Authorization': 'Bearer d318896f9ebc46fc898922b7278d6dca'}",
-                    'body': "{ 'query_input': { 'text': { 'text': 'hii', 'language_code': 'en- US' } } }",
-                })
-            }).then(function (response) {
-                console.log(response.result);
-            }
-                //function (reason) {
-                //console.log('Error: ' + reason.result.error.message);
-                //}
-            );
 
-            //$.ajax({
-            //    type: "POST",
-            //    url: "https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5225487587555426:detectIntent",
-            //    contentType: "application/json; charset-utf-8",
-            //    dataType: "json",
-            //    headers: {
-            //        "Authorization": "Bearer "+GoolgeDiglogFlowClientToken
-            //    },
-            //    data: JSON.stringify({ query_input: { text: { text: ChatMessagetoSend, language_code: 'en-US' } } }),
-            //    success: function (data) {
-            //        addReceiverClassDiv(data);
-            //    }
-            //});
+        $.ajax({
+            type: "POST",
+            url: "https://dialogflow.googleapis.com/v2beta1/projects/bfcservices-vdshos/agent/sessions/756ce29c-80ba-069d-a0d1-72d53396b825:detectIntent",
+            contentType: "application/json; charset-utf-8",
+            dataType: "json",
+            headers: {
+                'Authorization': "Bearer ya29.c.Kl65Bx3d5DCJdyd9FLSXQdFgd9yD9tTOCXlrszzWHAuMBxURSBQA7LcjsC5blAREgfg_T9QBcw77P5tVZTqnBOA_DcEoQtBgON3jNNwybht3Zcn0LvTv9frYolG8Hels"
+            },
+            data: JSON.stringify({
+                "query_input": { "text": { "text": ChatMessagetoSend, "language_code": "en-US" } }, "queryParams": { "timeZone": "Asia/Calcutta" }
+            }),
+            success: function (data) {
+                addReceiverClassDiv(data);
+            }
         });
+
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5454877841647555426:detectIntent",
+        //    contentType: "application/json; charset-utf-8",
+        //    dataType: "json",
+        //    headers: {
+        //        'Authorization': "Bearer " + GoolgeDiglogFlowClientToken
+        //    },
+        //    data: JSON.stringify({ "query_input": { "text": { "text": ChatMessagetoSend, "language_code": "en-US" } } }),
+        //    success: function (data) {
+        //        addReceiverClassDiv(data);
+        //    }
+        //});
+
+
+
+        //gapi.load('client', function () {
+        //    gapi.client.init({
+        //        'apiKey': 'AIzaSyB1t_tpo-If37RlO8k0D83LggZq2Z7nEuw',
+        //        // clientId and scope are optional if auth is not required.
+        //        'clientId': '334572477511-nd15dr112ttp11aidphh8f3uh47cen01.apps.googleusercontent.com',
+        //        'scope': 'profile',
+        //    }).then(function () {
+        //        // 3. Initialize and make the API request.
+        //        return gapi.client.request({
+        //            'path': 'https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5841487587555426:detectIntent',
+        //            'method': 'POST',
+        //            'headers': "{'Authorization': 'Bearer d318896f9ebc46fc898922b7278d6dca'}",
+        //            'body': "{ 'query_input': { 'text': { 'text': 'hii', 'language_code': 'en- US' } } }",
+        //        })
+        //    }).then(function (response) {
+        //        console.log(response.result);
+        //    }
+        //        //function (reason) {
+        //        //console.log('Error: ' + reason.result.error.message);
+        //        //}
+        //    );
+
+        //    //$.ajax({
+        //    //    type: "POST",
+        //    //    url: "https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5225487587555426:detectIntent",
+        //    //    contentType: "application/json; charset-utf-8",
+        //    //    dataType: "json",
+        //    //    headers: {
+        //    //        "Authorization": "Bearer "+GoolgeDiglogFlowClientToken
+        //    //    },
+        //    //    data: JSON.stringify({ query_input: { text: { text: ChatMessagetoSend, language_code: 'en-US' } } }),
+        //    //    success: function (data) {
+        //    //        addReceiverClassDiv(data);
+        //    //    }
+        //    //});
+        //});
     };
 
     function addReceiverClassDiv(DiglogFlowResponseData) {
@@ -99,7 +133,7 @@
         }
 
         var ParentDiv = angular.element(document.querySelector('#ParrentDivofChatbootmessages'));
-        ParentDiv.append('<div class="ChatbootReceiverMessage"><div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootReceiverMessageIcon" /></div><p class="ChatbootReceiverMessageText">' + DiglogFlowResponseData.result.fulfillment.speech + '</p></div>');
+        ParentDiv.append('<div class="ChatbootReceiverMessage"><div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootReceiverMessageIcon" /></div><p class="ChatbootReceiverMessageText">' + DiglogFlowResponseData.queryResult.fulfillmentText + '</p></div>');
     }
 
 }]);
