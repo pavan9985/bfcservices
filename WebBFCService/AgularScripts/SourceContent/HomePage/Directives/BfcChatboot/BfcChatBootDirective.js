@@ -24,7 +24,10 @@
 
     function addSendClassDiv(ChatMessagetoSend) {
         var ParentDiv = angular.element(document.querySelector('#ParrentDivofChatbootmessages'));
-        ParentDiv.append('<div class="ChatbootSenderMessage">< div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootSenderMessageIcon" /></div ><p class="ChatbootSenderMessageText">' + ChatMessagetoSend + '</p></div >')
+        ParentDiv.append(
+            '<div class="ChatbootSenderMessage"><div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootSenderMessageIcon" /></div ><p class="ChatbootSenderMessageText">' +
+            ChatMessagetoSend +
+            '</p></div >');
 
     };
 
