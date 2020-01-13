@@ -66,7 +66,7 @@
             contentType: "application/json; charset-utf-8",
             dataType: "json",
             headers: {
-                'Authorization': "Bearer ya29.c.Kl65B6lZHTVdHBmmvdEsfrOADwMqL62QxXV8NonuAJN1xvGWTenBWdS2axop412J7SJ8J9Z87fT5le1Q1TJ8hDgqnmJpSXKs0WM28_s8pS7A3ZJtGlHp0GXW03yqAU_c"
+                'Authorization': "Bearer ya29.c.Kl65B1P2Jm_0d0qdrk4ARQLQsxTmcz_b1xicwPEPTpWZByJHipS2AXUJHm6MSI-Dx0BG-5AyMWTY7YB6-i58XiOai-6VH8WnKgl-mKQKP1aoe0yUHTA6JeUH6plkXl-r"
             },
             data: JSON.stringify({
                 "query_input": { "text": { "text": ChatMessagetoSend, "language_code": "en-US" } }, "queryParams": { "timeZone": "Asia/Calcutta" }
