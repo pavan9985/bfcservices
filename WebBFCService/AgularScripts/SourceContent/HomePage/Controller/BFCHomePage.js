@@ -201,8 +201,6 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
         } catch (e) {
 
         }
-
-
     }
 
 

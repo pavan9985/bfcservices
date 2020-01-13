@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgularScripts\SourceContent\CommonScript\CommonSource.js" />
+    <Content Include="AgularScripts\SourceContent\CommonScript\ngEnter.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\bfcCarServices.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Controller\BFCHomePage.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCAcWashmechineRefrigeratorsDirective.js" />

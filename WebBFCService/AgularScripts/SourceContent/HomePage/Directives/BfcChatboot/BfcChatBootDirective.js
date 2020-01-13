@@ -30,7 +30,13 @@
             '<div class="ChatbootSenderMessage"><div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootSenderMessageIcon" /></div ><p class="ChatbootSenderMessageText">' +
             ChatMessagetoSend +
             '</p></div >');
-
+        //document.getElementById('ParrentDivofChatbootmessages').scrollTop =
+            //document.getElementById('ParrentDivofChatbootmessages').scrollHeight;
+        //ParentDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        //ParentDiv.scrollTop = ParentDiv.scrollHeight;
+        ParentDiv.animate({
+            scrollTop: document.getElementById('ParrentDivofChatbootmessages').scrollHeight - document.getElementById('ParrentDivofChatbootmessages').clientHeight
+        }, 200);
     };
 
 
@@ -66,7 +72,7 @@
             contentType: "application/json; charset-utf-8",
             dataType: "json",
             headers: {
-                'Authorization': "Bearer ya29.c.Kl65B1P2Jm_0d0qdrk4ARQLQsxTmcz_b1xicwPEPTpWZByJHipS2AXUJHm6MSI-Dx0BG-5AyMWTY7YB6-i58XiOai-6VH8WnKgl-mKQKP1aoe0yUHTA6JeUH6plkXl-r"
+                'Authorization': "Bearer ya29.c.Kl65B2ZL7XJXN8GZQ6IGrLolsA-u3aDh-IkMFvDu_2pnGzSj_xKnWzQ7QJ7N_-wiZaIu3sDYBQ1SlUryhx-P7EhqSQtPFkNAB8XBvTo1ayDZzSV7jqqeEDNDDtP81z7I"
             },
             data: JSON.stringify({
                 "query_input": { "text": { "text": ChatMessagetoSend, "language_code": "en-US" } }, "queryParams": { "timeZone": "Asia/Calcutta" }
@@ -139,6 +145,9 @@
 
         var ParentDiv = angular.element(document.querySelector('#ParrentDivofChatbootmessages'));
         ParentDiv.append('<div class="ChatbootReceiverMessage"><div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootReceiverMessageIcon" /></div><p class="ChatbootReceiverMessageText">' + DiglogFlowResponseData.queryResult.fulfillmentText + '</p></div>');
+        ParentDiv.animate({
+            scrollTop: document.getElementById('ParrentDivofChatbootmessages').scrollHeight - document.getElementById('ParrentDivofChatbootmessages').clientHeight
+        }, 200);
     }
 
 }]);
