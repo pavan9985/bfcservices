@@ -6,17 +6,18 @@
 .BfcChatBootPopup {
     position: fixed;
     z-index: 99;
-    min-width: 60%;
-    max-width: 50%;
+    height: 50%;
+    min-width: 50%;
     background-color: white;
     color: white;
     bottom: 10px;
     right: 20px;
     border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
 }
 
 .BfcChatBootMain {
-    padding: 18px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .BfcChatBootHeader {
@@ -38,6 +39,7 @@
 
 .ChatbootMessageBody {
     padding: 10px;
+    height: 234px;
     overflow: scroll;
 }
 
