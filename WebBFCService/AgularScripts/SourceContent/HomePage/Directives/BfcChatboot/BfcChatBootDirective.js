@@ -24,6 +24,8 @@
 
     function addSendClassDiv(ChatMessagetoSend) {
         var ParentDiv = angular.element(document.querySelector('#ParrentDivofChatbootmessages'));
+        $scope.hideTheOpenChatMessage = true;
+
         ParentDiv.append(
             '<div class="ChatbootSenderMessage"><div><img src="Rescorces/images/WhatsAppImage2019-11-22at02.29.04.jpeg" class="ChatbootSenderMessageIcon" /></div ><p class="ChatbootSenderMessageText">' +
             ChatMessagetoSend +
