@@ -39,7 +39,7 @@
 </head>
 <body ng-app="BFCHomePage" ng-controller="BFCHomeCtrl">
 
-    
+
     <div class="GoTop">
         <bfc-chat-boot-directive ng-hide="BfcChatbootShowHide" ng-init="BfcChatbootShowHide=true"></bfc-chat-boot-directive>
         <button ng-click="BfcChatbootShowHide = false;BfcChatbootHomePageIcon = true" class="GotoTop" id="GoTop" ng-hide="BfcChatbootHomePageIcon" ng-init="BfcChatbootHomePageIcon=false"><div class="GotopArrow fa" style="text-align:center;">&#xf064;</div></button>
@@ -145,6 +145,7 @@
                             </div>
                         </div>
 
+                        <!--<a href="#!ACWashingMechineServices" style="text-decoration-skip:none;">-->
                         <div class="BFCEachServices">
                             <bfc-ac-washingmechine-refrigerators-directive ng-hide="DirecctivebfcACWashMachineServicesView" ng-init="DirecctivebfcACWashMachineServicesView=true"></bfc-ac-washingmechine-refrigerators-directive>
                             <div class="ServicesMatter" ng-hide="DirecctivebfcACWashMachineServicesNav" ng-init="DirecctivebfcACWashMachineServicesNav=false">
@@ -165,6 +166,7 @@
 
                             </div>
                         </div>
+                        <!--</a>-->
                         <div class="BFCEachServices">
                             <bfc-digital-photography-service-directive ng-hide="DirecctivebfcDigitalPhotoGraphServicesView" ng-init="DirecctivebfcDigitalPhotoGraphServicesView=true"></bfc-digital-photography-service-directive>
                             <div class="ServicesMatter" ng-hide="DirecctivebfcDigitalPhotoGraphServicesNav" ng-init="DirecctivebfcDigitalPhotoGraphServicesNav=false">

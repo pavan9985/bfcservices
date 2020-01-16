@@ -35,7 +35,7 @@
             ChatMessagetoSend +
             '</p></div >');
         //document.getElementById('ParrentDivofChatbootmessages').scrollTop =
-            //document.getElementById('ParrentDivofChatbootmessages').scrollHeight;
+        //document.getElementById('ParrentDivofChatbootmessages').scrollHeight;
         //ParentDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
         //ParentDiv.scrollTop = ParentDiv.scrollHeight;
         ParentDiv.animate({
@@ -81,7 +81,9 @@
                 if (hasValue(data.access_token)) {
                     tokenKey = data.access_token;
                 }
-                addReceiverClassDiv(data);
+                else {
+                    addReceiverClassDiv(data);
+                }
             },
             error: function (erroeResponse) {
                 console.log(erroeResponse.status);
@@ -117,60 +119,6 @@
         //    dataType: "json",
         //    contentType: "application/json"
         //});
-
-
-        //$.ajax({
-        //    type: "POST",
-        //    url: "https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5454877841647555426:detectIntent",
-        //    contentType: "application/json; charset-utf-8",
-        //    dataType: "json",
-        //    headers: {
-        //        'Authorization': "Bearer " + GoolgeDiglogFlowClientToken
-        //    },
-        //    data: JSON.stringify({ "query_input": { "text": { "text": ChatMessagetoSend, "language_code": "en-US" } } }),
-        //    success: function (data) {
-        //        addReceiverClassDiv(data);
-        //    }
-        //});
-
-
-
-        //gapi.load('client', function () {
-        //    gapi.client.init({
-        //        'apiKey': 'AIzaSyB1t_tpo-If37RlO8k0D83LggZq2Z7nEuw',
-        //        // clientId and scope are optional if auth is not required.
-        //        'clientId': '334572477511-nd15dr112ttp11aidphh8f3uh47cen01.apps.googleusercontent.com',
-        //        'scope': 'profile',
-        //    }).then(function () {
-        //        // 3. Initialize and make the API request.
-        //        return gapi.client.request({
-        //            'path': 'https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5841487587555426:detectIntent',
-        //            'method': 'POST',
-        //            'headers': "{'Authorization': 'Bearer d318896f9ebc46fc898922b7278d6dca'}",
-        //            'body': "{ 'query_input': { 'text': { 'text': 'hii', 'language_code': 'en- US' } } }",
-        //        })
-        //    }).then(function (response) {
-        //        console.log(response.result);
-        //    }
-        //        //function (reason) {
-        //        //console.log('Error: ' + reason.result.error.message);
-        //        //}
-        //    );
-
-        //    //$.ajax({
-        //    //    type: "POST",
-        //    //    url: "https://dialogflow.googleapis.com/v2/projects/bfcservices-vdshos/agent/sessions/5225487587555426:detectIntent",
-        //    //    contentType: "application/json; charset-utf-8",
-        //    //    dataType: "json",
-        //    //    headers: {
-        //    //        "Authorization": "Bearer "+GoolgeDiglogFlowClientToken
-        //    //    },
-        //    //    data: JSON.stringify({ query_input: { text: { text: ChatMessagetoSend, language_code: 'en-US' } } }),
-        //    //    success: function (data) {
-        //    //        addReceiverClassDiv(data);
-        //    //    }
-        //    //});
-        //});
     };
 
     function addReceiverClassDiv(DiglogFlowResponseData) {
@@ -185,8 +133,10 @@
             scrollTop: document.getElementById('ParrentDivofChatbootmessages').scrollHeight - document.getElementById('ParrentDivofChatbootmessages').clientHeight
         }, 200);
     }
-    function getRefrestToken() {
+    $scope.getRefrestToken = function () {
         //GoogleDilogFlowService("client_id=" + clientId + "&client_secret=" + clientSecret + "&refresh_token=" + RefreshToken + "&grant_type=refresh_token", refreshAccessTokenUrl, "application / x - www - form - urlencoded", "Text", undefined);
         GoogleDilogFlowService({ client_id: clientId, client_secret: clientSecret, refresh_token: RefreshToken, grant_type: "refresh_token" }, refreshAccessTokenUrl, "application/json; charset-utf-8", "json", undefined);
     }
+
+    $scope.getRefrestToken();
 }]);
