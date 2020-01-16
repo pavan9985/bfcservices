@@ -154,6 +154,7 @@
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCDigitalPhotographyServicesDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCPaintingworksDirective.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Directives\BFCWoodWorksDirective.js" />
+    <Content Include="AgularScripts\SourceContent\HomePage\Directives\FeedBack\FeedBackPopup.js" />
     <Content Include="AgularScripts\SourceContent\HomePage\Modules\HomePage.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -1052,6 +1053,7 @@
     <Content Include="Styles\CSS\BfcChatBoot\BfcChatBootStyle.css" />
     <Content Include="Styles\CSS\bfcProfileMainView.css" />
     <Content Include="Styles\CSS\BFCViewProfileContactFeeBack.css" />
+    <Content Include="Styles\CSS\FeedBack\FeedBackPopup.css" />
     <Content Include="Styles\CSS\Homepage.css" />
     <Content Include="Views\BfcChatBoot\BFCChatBootPopUp.html" />
     <Content Include="Views\bfcEachServicesProfile\bfcAcWashingmechineRefrigeratorsServicesButViewContProf.html" />
@@ -1064,6 +1066,7 @@
     <Content Include="Views\bfcProfileViewDivs\bfcDigitalPhotographyProfileView.html" />
     <Content Include="Views\bfcProfileViewDivs\bfcPaintingWoorksProfileView.html" />
     <Content Include="Views\bfcProfileViewDivs\bfcWoodWorksProfileView.html" />
+    <Content Include="Views\FeedBack\FeedBackPopup.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

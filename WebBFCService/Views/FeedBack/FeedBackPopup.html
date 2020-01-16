@@ -1,0 +1,45 @@
+﻿<div class="FeedBackPopUp">
+    <link ng-href="Styles/CSS/FeedBack/FeedBackPopup.css" rel="stylesheet" />
+    <div class="FeedBackMain">
+        <div class="CrossCancle" ng-click="CrossCancleFeedBack()">&#10005;</div>
+        <div class="FeedBackHeading">Feed Back</div>
+        <div class="FeedBackPoints">
+            <select id="SelectServices" class="ServicesSelectDropDown OtherFeedBackCss">
+                <option value="0">Select...</option>
+                <option value="1">Car Service</option>
+                <option value="2">Ac/Washing Machine/Refrigerators Service</option>
+                <option value="3">Digital Photography</option>
+                <option value="4">Wood Works</option>
+                <option value="5">Painting Works</option>
+                <option value="6">Other</option>
+            </select>
+            <br />
+            <select id="SelectFeedBackCategory" class="ServicesFeedBackCategoryDropDown OtherFeedBackCss">
+                <option value="0">Select...</option>
+                <option value="1">BFC Response Over Web Site</option>
+                <option value="2">BFC Services Person Response</option>
+                <option value="3">BFC Tech Response</option>
+                <option value="4">Other</option>
+            </select>
+            <br />
+            <select id="SelectBFCSerivesHow" class="SelectBFCSerivesHowDropDown OtherFeedBackCss">
+                <option value="0">Select...</option>
+                <option value="1">Scocial Media</option>
+                <option value="2">Mouth Talk</option>
+                <option value="3">Friend Suggest</option>
+                <option value="4">Other</option>
+            </select>
+            <br />
+            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10" pattern="[1-9]{1}[0-9]{9}" class="InputFeedBackField OtherFeedBackCss" placeholder="Mobile Number" title="Phone Number" ng-model="FeedBackerPhoneNumber" />
+            <br />
+            <input type="text" class="InputFeedBackField OtherFeedBackCss" title="Name" placeholder="Name" ng-model="FeedBackerName" />
+            <br />
+            <textarea type="text" class="InputFeedBackField OtherFeedBackCss" title="FeedBack Description" placeholder="FeedBack Description" ng-model="FeedBackDescription" />
+            <br />
+        </div>
+        <button class="FeedBackSubmitButton OtherFeedBackCss" ng-click="FeedBackSubmit()">Submit</button>
+        <button class="FeedBackCancleButton OtherFeedBackCss" ng-click="FeedBackCancle()">Cancle</button>
+        <button class="FeedBackResetButton OtherFeedBackCss" ng-click="FeedBackReset()">Reset</button>
+
+    </div>
+</div>

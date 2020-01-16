@@ -28,6 +28,7 @@
     <script src="AgularScripts/SourceContent/HomePage/Modules/HomePage.js"></script>
     <script src="AgularScripts/SourceContent/CommonScript/ngEnter.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCCarServicsDirective.js"></script>
+    <script src="AgularScripts/SourceContent/HomePage/Directives/FeedBack/FeedBackPopup.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCAcWashmechineRefrigeratorsDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCDigitalPhotographyServicesDirective.js"></script>
     <script src="AgularScripts/SourceContent/HomePage/Directives/BFCWoodWorksDirective.js"></script>
@@ -99,6 +100,7 @@
         </div>
         <!--<bfc-car-main-profile-view ng-hide="bfcMainProfileViewHideDirective" ng-init="bfcMainProfileViewHideDirective=true"></bfc-car-main-profile-view>-->
         <ng-view ng-hide="bfcMainProfileViewHideDirective" ng-init="bfcMainProfileViewHideDirective=true"></ng-view>
+        <bfc-feedback-directive ng-hide="FeedBackDirective" ng-init="FeedBackDirective=true"></bfc-feedback-directive>
         <div class="BFCBodyContent" ng-hide="bfcHomePageViewHideBodyContent" ng-init="bfcHomePageViewHideBodyContent=false">
 
             <div class="ServicesContent">
@@ -125,9 +127,9 @@
                 <div class="ScrollbelContent">
                     <div class="BFCServicesCategory">
 
-                        <div class="BFCEachServices">
+                        <div class="BFCEachServices" >
                             <bfc-car-service-directive ng-hide="DirecctivebfcCarServicesView" ng-init="DirecctivebfcCarServicesView=true"></bfc-car-service-directive>
-                            <div class="ServicesMatter" ng-hide="DirecctivebfcCarServicesNav" ng-init="DirecctivebfcCarServicesNav=false">
+                            <div class="ServicesMatter" ng-hide="DirecctivebfcCarServicesNav" ng-init="DirecctivebfcCarServicesNav=false" ng-click="CarServices()">
                                 <div class="BFCEachServicesImage">&#x2620;</div>
                                 <div class="ServicesNavigationBar" ng-click="CarServices()">
                                     &#x276F;
@@ -146,30 +148,32 @@
                         </div>
 
                         <!--<a href="#!ACWashingMechineServices" style="text-decoration-skip:none;">-->
-                        <div class="BFCEachServices">
+                        <div class="BFCEachServices" >
                             <bfc-ac-washingmechine-refrigerators-directive ng-hide="DirecctivebfcACWashMachineServicesView" ng-init="DirecctivebfcACWashMachineServicesView=true"></bfc-ac-washingmechine-refrigerators-directive>
-                            <div class="ServicesMatter" ng-hide="DirecctivebfcACWashMachineServicesNav" ng-init="DirecctivebfcACWashMachineServicesNav=false">
-                                <div class="BFCEachServicesImage">&#x2620;</div>
-                                <div class="ServicesNavigationBar" ng-click="ACWashMachineService()">
-                                    &#x276F;
-                                </div>
-                                <div class="RatingStarsOnEachServices">
-                                    <label id="BfcACWashingMachineRefrigeratorsstar1" ng-click="StarclickNumber=1;CurrentstartFunction(2)" style="color:gold;">&#10031;</label>
-                                    <label id="BfcACWashingMachineRefrigeratorsstar2" ng-click="StarclickNumber=2;CurrentstartFunction(2)">&#10031;</label>
-                                    <label id="BfcACWashingMachineRefrigeratorsstar3" ng-click="StarclickNumber=3;CurrentstartFunction(2)">&#10031;</label>
-                                    <label id="BfcACWashingMachineRefrigeratorsstar4" ng-click="StarclickNumber=4;CurrentstartFunction(2)">&#10031;</label>
-                                    <label id="BfcACWashingMachineRefrigeratorsstar5" ng-click="StarclickNumber=5;CurrentstartFunction(2)">&#10031;</label>
-                                </div>
-                                <div class="BFCServicesContentMatter">
-                                    AC, Washing Machine and Refrigerators
-                                </div>
+                            
+                                <div class="ServicesMatter" ng-hide="DirecctivebfcACWashMachineServicesNav" ng-init="DirecctivebfcACWashMachineServicesNav=false" ng-click="ACWashMachineService()">
+                                    <div class="BFCEachServicesImage">&#x2620;</div>
+                                    <div class="ServicesNavigationBar" ng-click="ACWashMachineService()">
+                                        &#x276F;
+                                    </div>
+                                    <div class="RatingStarsOnEachServices">
+                                        <label id="BfcACWashingMachineRefrigeratorsstar1" ng-click="StarclickNumber=1;CurrentstartFunction(2)" style="color:gold;">&#10031;</label>
+                                        <label id="BfcACWashingMachineRefrigeratorsstar2" ng-click="StarclickNumber=2;CurrentstartFunction(2)">&#10031;</label>
+                                        <label id="BfcACWashingMachineRefrigeratorsstar3" ng-click="StarclickNumber=3;CurrentstartFunction(2)">&#10031;</label>
+                                        <label id="BfcACWashingMachineRefrigeratorsstar4" ng-click="StarclickNumber=4;CurrentstartFunction(2)">&#10031;</label>
+                                        <label id="BfcACWashingMachineRefrigeratorsstar5" ng-click="StarclickNumber=5;CurrentstartFunction(2)">&#10031;</label>
+                                    </div>
+                                    <div class="BFCServicesContentMatter">
+                                        AC, Washing Machine and Refrigerators
+                                    </div>
 
-                            </div>
+                                </div>
+                            
                         </div>
                         <!--</a>-->
-                        <div class="BFCEachServices">
+                        <div class="BFCEachServices" >
                             <bfc-digital-photography-service-directive ng-hide="DirecctivebfcDigitalPhotoGraphServicesView" ng-init="DirecctivebfcDigitalPhotoGraphServicesView=true"></bfc-digital-photography-service-directive>
-                            <div class="ServicesMatter" ng-hide="DirecctivebfcDigitalPhotoGraphServicesNav" ng-init="DirecctivebfcDigitalPhotoGraphServicesNav=false">
+                            <div class="ServicesMatter" ng-hide="DirecctivebfcDigitalPhotoGraphServicesNav" ng-init="DirecctivebfcDigitalPhotoGraphServicesNav=false" ng-click="DigitalPhotoGraphService()">
                                 <div class="BFCEachServicesImage">&#x2620;</div>
                                 <div class="ServicesNavigationBar" ng-click="DigitalPhotoGraphService()">
                                     &#x276F;
@@ -187,9 +191,9 @@
 
                             </div>
                         </div>
-                        <div class="BFCEachServices">
+                        <div class="BFCEachServices" >
                             <bfc-woodworks-service-directive ng-hide="DirecctivebfcWoodWorksServicesView" ng-init="DirecctivebfcWoodWorksServicesView=true"></bfc-woodworks-service-directive>
-                            <div class="ServicesMatter" ng-hide="DirecctivebfcWoodWoorksServicesNav" ng-init="DirecctivebfcWoodWoorksServicesNav=false">
+                            <div class="ServicesMatter" ng-hide="DirecctivebfcWoodWoorksServicesNav" ng-init="DirecctivebfcWoodWoorksServicesNav=false" ng-click="WoodWorksService()">
                                 <div class="BFCEachServicesImage">&#x2620;</div>
                                 <div class="ServicesNavigationBar" ng-click="WoodWorksService()">
                                     &#x276F;
@@ -206,9 +210,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="BFCEachServices">
+                        <div class="BFCEachServices" >
                             <bfc-painting-works-service-directive ng-hide="DirecctivebfcPaintingWorksServicesView" ng-init="DirecctivebfcPaintingWorksServicesView=true"></bfc-painting-works-service-directive>
-                            <div class="ServicesMatter" ng-hide="DirecctivebfcPaintingWorksServicesNav" ng-init="DirecctivebfcPaintingWorksServicesNav=false">
+                            <div class="ServicesMatter" ng-hide="DirecctivebfcPaintingWorksServicesNav" ng-init="DirecctivebfcPaintingWorksServicesNav=false" ng-click="PaintingWorks()">
                                 <div class="BFCEachServicesImage">&#x2620;</div>
                                 <div class="ServicesNavigationBar" ng-click="PaintingWorks()">
                                     &#x276F;
@@ -234,8 +238,8 @@
 
 
         <!--<input id="UserID" type="text" placeholder="Enter" />
-        <input id="UserPassword" type="password" placeholder="Password"/>
-        <button title="Login" onclick="OnClick()">Login</button>
-        <input id="ResultField" type="text"/>-->
+    <input id="UserPassword" type="password" placeholder="Password"/>
+    <button title="Login" onclick="OnClick()">Login</button>
+    <input id="ResultField" type="text"/>-->
 </body>
 </html>

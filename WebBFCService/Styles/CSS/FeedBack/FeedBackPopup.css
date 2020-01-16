@@ -1,0 +1,66 @@
+﻿.FeedBackHeading {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0px 0px 15px 0px;
+}
+
+.FeedBackPoints {
+    background: #a9a9c5
+}
+
+.FeedBackMain {
+    background: #372746bd;
+    width: 75%;
+    margin: auto;
+    padding: 15px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+.FeedBackPopUp {
+}
+
+.OtherFeedBackCss {
+    text-align: center;
+    margin: 20px 0px 0px 10%;
+    box-border: none;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid red;
+    border-bottom: 1px solid #04083e;
+    background: none;
+    font-size: medium;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+    .OtherFeedBackCss:hover {
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        border-top: 1px solid #04083e;
+        border-right: 1px solid red;
+        border-left: 1px solid red;
+        border-bottom: 1px solid #04083e;
+        font-weight: bold;
+    }
+
+.CrossCancle {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.FeedBackSubmitButton {
+    background: #b3f7ca;
+    border: none;
+}
+
+.FeedBackCancleButton {
+    background: #fdd296fa;
+    border: none;
+}
+
+.FeedBackResetButton {
+    background: #abd9fdfa;
+    border: none;
+}
