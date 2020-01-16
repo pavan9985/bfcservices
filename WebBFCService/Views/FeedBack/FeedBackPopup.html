@@ -4,7 +4,7 @@
         <div class="CrossCancle" ng-click="CrossCancleFeedBack()">&#10005;</div>
         <div class="FeedBackHeading">Feed Back</div>
         <div class="FeedBackPoints">
-            <select id="SelectServices" class="ServicesSelectDropDown OtherFeedBackCss">
+            <select id="SelectServices" class="ServicesSelectDropDown SelectDropDown OtherFeedBackCss">
                 <option value="0">Select...</option>
                 <option value="1">Car Service</option>
                 <option value="2">Ac/Washing Machine/Refrigerators Service</option>
@@ -14,7 +14,7 @@
                 <option value="6">Other</option>
             </select>
             <br />
-            <select id="SelectFeedBackCategory" class="ServicesFeedBackCategoryDropDown OtherFeedBackCss">
+            <select id="SelectFeedBackCategory" class="ServicesFeedBackCategoryDropDown SelectDropDown OtherFeedBackCss">
                 <option value="0">Select...</option>
                 <option value="1">BFC Response Over Web Site</option>
                 <option value="2">BFC Services Person Response</option>
@@ -22,7 +22,7 @@
                 <option value="4">Other</option>
             </select>
             <br />
-            <select id="SelectBFCSerivesHow" class="SelectBFCSerivesHowDropDown OtherFeedBackCss">
+            <select id="SelectBFCSerivesHow" class="SelectBFCSerivesHowDropDown SelectDropDown OtherFeedBackCss">
                 <option value="0">Select...</option>
                 <option value="1">Scocial Media</option>
                 <option value="2">Mouth Talk</option>
@@ -34,7 +34,7 @@
             <br />
             <input type="text" class="InputFeedBackField OtherFeedBackCss" title="Name" placeholder="Name" ng-model="FeedBackerName" />
             <br />
-            <textarea type="text" class="InputFeedBackField OtherFeedBackCss" title="FeedBack Description" placeholder="FeedBack Description" ng-model="FeedBackDescription" />
+            <textarea type="text" class="InputFeedBackField TextAreaDescription OtherFeedBackCss" title="FeedBack Description" placeholder="FeedBack Description" ng-model="FeedBackDescription" />
             <br />
         </div>
         <button class="FeedBackSubmitButton OtherFeedBackCss" ng-click="FeedBackSubmit()">Submit</button>

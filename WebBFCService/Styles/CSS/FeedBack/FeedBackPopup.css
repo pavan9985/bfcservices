@@ -23,6 +23,7 @@
 .OtherFeedBackCss {
     text-align: center;
     margin: 20px 0px 0px 10%;
+    width: 22%;
     box-border: none;
     border-radius: 10px;
     border-top: none;
@@ -53,6 +54,18 @@
 .FeedBackSubmitButton {
     background: #b3f7ca;
     border: none;
+}
+
+.SelectDropDown {
+    width: 60%;
+}
+
+.InputFeedBackField {
+    width: 50%;
+}
+
+.TextAreaDescription {
+    width: 60%;
 }
 
 .FeedBackCancleButton {

@@ -28,5 +28,8 @@
 
     $scope.OpenFeedBackOnTab = function (opneFeedBackTab) {
         OpenTableOnFeedBackone = opneFeedBackTab;
+        $scope.FeedBackDirective = false;
+        $scope.bfcMainProfileViewHideDirective = true;
+        $scope.bfcHomePageViewHideBodyContent = true;
     }
 }]);
