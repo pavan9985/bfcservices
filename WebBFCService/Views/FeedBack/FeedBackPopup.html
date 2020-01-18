@@ -31,7 +31,7 @@
             </select>
             <br />
             <!--onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10"-->
-            <input type="text" onkeypress="validateOnlyNumbers(event)" maxlength="10" pattern="[1-9]{1}[0-9]{9}" class="InputFeedBackField OtherFeedBackCss" placeholder="Mobile Number" title="Phone Number" ng-model="FeedBackerPhoneNumber" />
+            <input type="tel" onkeyup="this.value=this.value.replace(/[^\d]/,'')" maxlength="10" pattern="[1-9]{1}[0-9]{9}" class="InputFeedBackField OtherFeedBackCss" placeholder="Mobile Number" title="Phone Number" ng-model="FeedBackerPhoneNumber" />
             <br />
             <input type="text" class="InputFeedBackField OtherFeedBackCss" title="Name" placeholder="Name" ng-model="FeedBackerName" />
             <br />
