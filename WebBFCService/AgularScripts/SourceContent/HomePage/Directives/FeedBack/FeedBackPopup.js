@@ -71,6 +71,15 @@
         $scope.bfcHomePageViewHideBodyContent = true;
     }
 
+    $scope.FeedBackReset = function () {
+        $scope.SelectedServicesOnFeedBack = undefined;
+        $scope.SelectedFeedBackCategory = undefined;
+        $scope.SelectedHowBfcKnow = undefined;
+        $scope.FeedBackerName = "";
+        $scope.FeedBackerPhoneNumber = "";
+        $scope.FeedBackDescription = "";
+    }
+
     $scope.FeedBackSubmit = function () {
         if (!hasValue($scope.SelectedServicesOnFeedBack)) {
             alert("Select Service to Give Feed Back.");
@@ -114,8 +123,10 @@
             ipAddress: $scope.LoginUserDetails.ip,
             city: $scope.LoginUserDetails.city,
             state: $scope.LoginUserDetails.region,
+            time: new Date().toLocaleTimeString(),
+            Date: new Date().toLocaleDateString(),
         });
-
+        $scope.FeedBackReset();
         alert("Thanks, This FeedBack Helps Other.");
     }
 }]);
