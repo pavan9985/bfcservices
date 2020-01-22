@@ -4,30 +4,19 @@
         <div class="CrossCancle" ng-click="CrossCancleFeedBack()">&#10005;</div>
         <div class="FeedBackHeading">Feed Back</div>
         <div class="FeedBackPoints">
-            <select id="SelectServices" class="ServicesSelectDropDown SelectDropDown OtherFeedBackCss">
-                <option value="0">Select...</option>
-                <option value="1">Car Service</option>
-                <option value="2">Ac/Washing Machine/Refrigerators Service</option>
-                <option value="3">Digital Photography</option>
-                <option value="4">Wood Works</option>
-                <option value="5">Painting Works</option>
-                <option value="6">Other</option>
+            <select id="SelectServices" class="ServicesSelectDropDown SelectDropDown OtherFeedBackCss" ng-model="SelectedServicesOnFeedBack">
+                <option value="">----   Select Service   ----</option>
+                <option ng-repeat="EachService in Services" value="{{EachService.Value}}">{{ EachService.Service }}</option>
             </select>
             <br />
-            <select id="SelectFeedBackCategory" class="ServicesFeedBackCategoryDropDown SelectDropDown OtherFeedBackCss">
-                <option value="0">Select...</option>
-                <option value="1">BFC Response Over Web Site</option>
-                <option value="2">BFC Services Person Response</option>
-                <option value="3">BFC Tech Response</option>
-                <option value="4">Other</option>
+            <select id="SelectFeedBackCategory" class="ServicesFeedBackCategoryDropDown SelectDropDown OtherFeedBackCss" ng-model="SelectedFeedBackCategory">
+                <option value="">----   Select FeedBack On   ----</option>
+                <option ng-repeat="EachCategory in FeedBackCategory" value="{{EachCategory.Value}}">{{ EachCategory.FeedBackOn }}</option>
             </select>
             <br />
-            <select id="SelectBFCSerivesHow" class="SelectBFCSerivesHowDropDown SelectDropDown OtherFeedBackCss">
-                <option value="0">Select...</option>
-                <option value="1">Scocial Media</option>
-                <option value="2">Mouth Talk</option>
-                <option value="3">Friend Suggest</option>
-                <option value="4">Other</option>
+            <select id="SelectBFCSerivesHow" class="SelectBFCSerivesHowDropDown SelectDropDown OtherFeedBackCss" ng-model="SelectedHowBfcKnow">
+                <option value="">----   Select How do you Know   ----</option>
+                <option ng-repeat="EachKnownBfc in BfcHowToKnow" value="{{EachKnownBfc.Value}}">{{ EachKnownBfc.KnowBy }}</option>
             </select>
             <br />
             <!--onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10"-->

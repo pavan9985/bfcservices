@@ -9,8 +9,6 @@
 //    BfcPaintingWorks: 5,
 
 //};
-
-
 var BFCServicesProviding = {
 
     BfcCarTravelsandPurchases: "BfcCarTravelsandPurchases",
@@ -33,6 +31,13 @@ function hasValue(inputValue) {
 
 BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $http) {
     $scope.bfcHomePageViewHideBodyContent = false;
+
+    $.getJSON('https://api.ipdata.co?api-key=test', function (data) {
+        $scope.LoginUserDetails = {};
+        $scope.LoginUserDetails = data;
+        Object.freeze($scope.LoginUserDetails);
+        //JSON.stringify(data, null, 2);
+    });
 
     $scope.CrossCancle = function () {
 
@@ -219,5 +224,5 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
         });
     };
 
-    
+
 }]);
