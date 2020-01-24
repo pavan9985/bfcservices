@@ -24,7 +24,15 @@
             <br />
             <input type="text" class="InputFeedBackField OtherFeedBackCss" title="Name" placeholder="Name" ng-model="FeedBackerName" />
             <br />
-            <textarea type="text" class="InputFeedBackField TextAreaDescription OtherFeedBackCss" title="FeedBack Description" placeholder="FeedBack Description" ng-model="FeedBackDescription" />
+            <textarea type="text" class="InputFeedBackField TextAreaDescription OtherFeedBackCss" title="FeedBack Description" placeholder="FeedBack Description" ng-model="FeedBackDescription"></textarea>
+            <br />
+            <div class="RatingStarsOnFeedBack InputFeedBackField">
+                <label id="FeedBackstar1" ng-click="StarclickNumber=1;CurrentFeedbackstartFunction()">&#10031;</label>
+                <label id="FeedBackstar2" ng-click="StarclickNumber=2;CurrentFeedbackstartFunction()">&#10031;</label>
+                <label id="FeedBackstar3" ng-click="StarclickNumber=3;CurrentFeedbackstartFunction()">&#10031;</label>
+                <label id="FeedBackstar4" ng-click="StarclickNumber=4;CurrentFeedbackstartFunction()">&#10031;</label>
+                <label id="FeedBackstar5" ng-click="StarclickNumber=5;CurrentFeedbackstartFunction()">&#10031;</label>
+            </div>
             <br />
         </div>
         <button class="FeedBackSubmitButton OtherFeedBackCss" ng-click="FeedBackSubmit()">Submit</button>

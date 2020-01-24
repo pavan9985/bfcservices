@@ -64,6 +64,21 @@
         }
     };
 
+    $scope.CurrentFeedbackstartFunction = function () {
+        var CurrentStarIdValue;
+        for (var StartIndex = 1; StartIndex <= 5; StartIndex++) {
+            CurrentStarIdValue = "FeedBackstar" + StartIndex.toString();
+            if (StartIndex <= $scope.StarclickNumber) {
+
+                document.getElementById(CurrentStarIdValue).style.color = "gold";
+            }
+            else {
+                document.getElementById(CurrentStarIdValue).style.color = "#7b7f86";
+            }
+        }
+    };
+
+
     $scope.OpenFeedBackOnTab = function (opneFeedBackTab) {
         OpenTableOnFeedBackone = opneFeedBackTab;
         $scope.FeedBackDirective = false;
@@ -78,6 +93,8 @@
         $scope.FeedBackerName = "";
         $scope.FeedBackerPhoneNumber = "";
         $scope.FeedBackDescription = "";
+        $scope.StarclickNumber = 0;
+        $scope.CurrentFeedbackstartFunction();
     }
 
     $scope.FeedBackSubmit = function () {
@@ -105,6 +122,10 @@
             alert("Describe the Feed Back.");
             return;
         }
+        if (!hasValue($scope.StarclickNumber)) {
+            alert("Rate the BFC.");
+            return;
+        }
 
         $scope.StoreFeedBackToFireBaseDb();
     };
@@ -125,8 +146,10 @@
             state: $scope.LoginUserDetails.region,
             time: new Date().toLocaleTimeString(),
             Date: new Date().toLocaleDateString(),
+            Rating: $scope.StarclickNumber,
         });
         $scope.FeedBackReset();
+        $scope.CrossCancleFeedBack();
         alert("Thanks, This FeedBack Helps Other.");
     }
 }]);
