@@ -263,7 +263,7 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
                         '<div class="EachFeedBackReviewToShow"><div class="FeedBackerName" ng-model="FeedBackerNameInHomePage">' +
                         span.val().FeedBackerName +
                         '</div><div class="FeedTimeToShow" ng-model="FeedBackCityAndTimeOfReview">' +
-                        span.val().city +
+                        span.val().city+', ' +
                         span.val().Date +
                         '</div><div class="FeedBackMatterToShow" ng-model="FeedBackDescriptionToShow">' +
                         span.val().FeedBackDescription +
@@ -290,5 +290,5 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
             });
     }
 
-     $scope.getFeedBackReviewOnHomePage(10);
+     // $scope.getFeedBackReviewOnHomePage(10);
 }]);
