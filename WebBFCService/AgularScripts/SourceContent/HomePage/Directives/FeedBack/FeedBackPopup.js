@@ -38,19 +38,19 @@
 
     var OpenTableOnFeedBackone;
 
-    var firebaseConfig = {
-        apiKey: "AIzaSyA-VMi7uWfEczBkXUBxHVanFnn2DcIqzP4",
-        authDomain: "bfcservices-vdshos.firebaseapp.com",
-        databaseURL: "https://bfcservices-vdshos.firebaseio.com",
-        projectId: "bfcservices-vdshos",
-        storageBucket: "bfcservices-vdshos.appspot.com",
-        messagingSenderId: "334572477511",
-        appId: "1:334572477511:web:0823b352ae3b9fe9d6e562",
-        measurementId: "G-3K6E1RV5N3"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+    //var firebaseConfig = {
+    //    apiKey: "AIzaSyA-VMi7uWfEczBkXUBxHVanFnn2DcIqzP4",
+    //    authDomain: "bfcservices-vdshos.firebaseapp.com",
+    //    databaseURL: "https://bfcservices-vdshos.firebaseio.com",
+    //    projectId: "bfcservices-vdshos",
+    //    storageBucket: "bfcservices-vdshos.appspot.com",
+    //    messagingSenderId: "334572477511",
+    //    appId: "1:334572477511:web:0823b352ae3b9fe9d6e562",
+    //    measurementId: "G-3K6E1RV5N3"
+    //};
+    //// Initialize Firebase
+    //firebase.initializeApp(firebaseConfig);
+    //firebase.analytics();
     var database = firebase.database();
 
     $scope.CrossCancleFeedBack = function () {
@@ -95,6 +95,10 @@
         $scope.FeedBackDescription = "";
         $scope.StarclickNumber = 0;
         $scope.CurrentFeedbackstartFunction();
+
+        // firebase.database().ref("FeedBacks").limitToFirst(10).on("child_added", function (span) {
+        //     console.log(span.val());
+        // });
     }
 
     $scope.FeedBackSubmit = function () {
@@ -133,7 +137,7 @@
     $scope.StoreFeedBackToFireBaseDb = function () {
         var dateValue = new Date();
         var Guid = dateValue.valueOf();
-        firebase.database().ref($scope.FeedBackerPhoneNumber + "_" + $scope.FeedBackerName + "_" + Guid).set({
+        firebase.database().ref("FeedBacks/" + $scope.FeedBackerPhoneNumber + "_" + $scope.FeedBackerName + "_" + Guid).set({
             FeedBackOnService: $scope.SelectedServicesOnFeedBack,
             FeedBackCategory: $scope.SelectedFeedBackCategory,
             BfcToKnow: $scope.SelectedHowBfcKnow,
@@ -146,10 +150,11 @@
             state: $scope.LoginUserDetails.region,
             time: new Date().toLocaleTimeString(),
             Date: new Date().toLocaleDateString(),
-            Rating: $scope.StarclickNumber,
+            Rating: $scope.StarclickNumber
         });
         $scope.FeedBackReset();
         $scope.CrossCancleFeedBack();
         alert("Thanks, This FeedBack Helps Other.");
+        
     }
 }]);

@@ -29,6 +29,18 @@ function hasValue(inputValue) {
     }
 }
 
+function StartLableFunction(StartNumber) {
+    var starsLabel;
+    for (var starValue = 1; starValue <= 5; starValue++) {
+        if (starValue <= StartNumber) {
+            starsLabel = "<label id='FeedBackGivenRatingStars" + starValue + "' class='FeedBackStarsToShow' style='color:gold;'>&#10031;</label>";
+        } else {
+            starsLabel = "<label id='FeedBackGivenRatingStars" + starValue + "' class='FeedBackStarsToShow'>&#10031;</label>";
+        }
+    }
+    return starsLabel;
+}
+
 BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $http) {
     $scope.bfcHomePageViewHideBodyContent = false;
 
@@ -38,6 +50,20 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
         Object.freeze($scope.LoginUserDetails);
         //JSON.stringify(data, null, 2);
     });
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyA-VMi7uWfEczBkXUBxHVanFnn2DcIqzP4",
+        authDomain: "bfcservices-vdshos.firebaseapp.com",
+        databaseURL: "https://bfcservices-vdshos.firebaseio.com",
+        projectId: "bfcservices-vdshos",
+        storageBucket: "bfcservices-vdshos.appspot.com",
+        messagingSenderId: "334572477511",
+        appId: "1:334572477511:web:0823b352ae3b9fe9d6e562",
+        measurementId: "G-3K6E1RV5N3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
 
     $scope.CrossCancle = function () {
 
@@ -224,5 +250,26 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
         });
     };
 
+    $scope.getFeedBackReviewOnHomePage = function (limitToGetReviews) {
+        var EachReviewtoHoldBody = angular.element(document.querySelector('#EachReviewToHoldBody'));
+        firebase.database().ref("FeedBacks").limitToFirst(limitToGetReviews).on("child_added",
+            function (span) {
+                console.log(span.val());
+                    var eachStartLabelElement =
+                        '<div class="EachFeedBackReviewToShow"><div class="FeedBackerName" ng-model="FeedBackerNameInHomePage">' +
+                        span.val().FeedBackerName +
+                        '</div><div class="FeedTimeToShow" ng-model="FeedBackCityAndTimeOfReview">' +
+                        span.val().city +
+                        span.val().Date +
+                        '</div><div class="FeedBackMatterToShow" ng-model="FeedBackDescriptionToShow">' +
+                        span.val().FeedBackDescription +
+                        '</div><div class="FeedBackRateGivenToShow">' +
+                        StartLableFunction(span.val().Rating) +
+                        '</div></div>';
+                    EachReviewtoHoldBody.append(eachStartLabelElement);
 
+            });
+    }
+
+    $scope.getFeedBackReviewOnHomePage(10);
 }]);

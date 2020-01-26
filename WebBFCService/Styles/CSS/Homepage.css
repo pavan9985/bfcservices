@@ -393,7 +393,6 @@ ServicesContent {
 }
 
     .GotoTop:hover {
-         
         cursor: pointer;
         -ms-transform: scale(1.1) rotate(-90deg);
         -webkit-transform: scale(1.1) rotate(-90deg);
@@ -530,5 +529,62 @@ ServicesContent {
 
     100% {
         transform: rotate(-90deg);
+    }
+}
+
+.FeedBacksToShowOnHomePageMain {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 1px;
+    background: #f5f5f5db;
+    float: left;
+}
+
+.FeedBacksToShowBody {
+    padding: 0px 20px 0px 20px;
+    background: #f5f5f500;
+}
+
+.EachFeedBackReviewToShow {
+    box-size: border-box;
+    margin: 30px 2% 20px 0px;
+    background: #e2f5d3;
+    box-shadow: 1px 1px 7px gray;
+    border-radius: 15px 15px 0px 15px;
+    padding: 10px;
+}
+
+
+.FeedBackerName {
+    font-weight: bold;
+    color: #f70000;
+    float: left;
+}
+
+.FeedTimeToShow {
+    text-align: right;
+    color: #560000;
+    font-size: x-small;
+}
+
+.FeedBackMatterToShow {
+    margin: 20px 0px 10px 0px;
+    font-family: cursive;
+}
+
+.FeedBackRateGivenToShow {
+    text-align: right;
+}
+
+.FeedBackStarsToShow {
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (min-width: 960px) {
+    .EachFeedBackReviewToShow {
+        width: 29%;
+        float: left;
     }
 }
