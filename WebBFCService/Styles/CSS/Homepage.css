@@ -535,9 +535,15 @@ ServicesContent {
 .FeedBacksToShowOnHomePageMain {
     width: 100%;
     margin-top: 20px;
-    margin-left: 1px;
     background: #f5f5f5db;
     float: left;
+}
+
+.FeedBackToShowHeadder {
+    font-size: xx-large;
+    margin: 10px 20px;
+    color: #150348;
+    transition: 0.4s ease-in-out;
 }
 
 .FeedBacksToShowBody {
@@ -546,14 +552,16 @@ ServicesContent {
 }
 
 .EachFeedBackReviewToShow {
-    box-size: border-box;
-    margin: 30px 2% 20px 0px;
+    margin: 0px 0px 25px 0px;
     background: #e2f5d3;
     box-shadow: 1px 1px 7px gray;
     border-radius: 15px 15px 0px 15px;
     padding: 10px;
 }
 
+.FeedBackEachColumnToShow {
+    margin: 30px 2% 0px 30px;
+}
 
 .FeedBackerName {
     font-weight: bold;
@@ -583,7 +591,8 @@ ServicesContent {
 }
 
 @media (min-width: 960px) {
-    .EachFeedBackReviewToShow {
+
+    .FeedBackEachColumnToShow {
         width: 29%;
         float: left;
     }

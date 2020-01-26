@@ -30,12 +30,12 @@ function hasValue(inputValue) {
 }
 
 function StartLableFunction(StartNumber) {
-    var starsLabel;
+    var starsLabel ="";
     for (var starValue = 1; starValue <= 5; starValue++) {
         if (starValue <= StartNumber) {
-            starsLabel = "<label id='FeedBackGivenRatingStars" + starValue + "' class='FeedBackStarsToShow' style='color:gold;'>&#10031;</label>";
+            starsLabel += "<label id='FeedBackGivenRatingStars" + starValue + "' class='FeedBackStarsToShow' style='color:gold;'>&#10031;</label>";
         } else {
-            starsLabel = "<label id='FeedBackGivenRatingStars" + starValue + "' class='FeedBackStarsToShow'>&#10031;</label>";
+            starsLabel += "<label id='FeedBackGivenRatingStars" + starValue + "' class='FeedBackStarsToShow'>&#10031;</label>";
         }
     }
     return starsLabel;
@@ -251,10 +251,14 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
     };
 
     $scope.getFeedBackReviewOnHomePage = function (limitToGetReviews) {
-        var EachReviewtoHoldBody = angular.element(document.querySelector('#EachReviewToHoldBody'));
+        var ReviewToAppend = 1;
+        var ReviewColumn1BodyHold = angular.element(document.querySelector('#FeedBackEachColumn1ToShow'));
+        var ReviewColumn2BodyHold = angular.element(document.querySelector('#FeedBackEachColumn2ToShow'));
+        var ReviewColumn3BodyHold = angular.element(document.querySelector('#FeedBackEachColumn3ToShow'));
         firebase.database().ref("FeedBacks").limitToFirst(limitToGetReviews).on("child_added",
             function (span) {
                 console.log(span.val());
+                if (span)
                     var eachStartLabelElement =
                         '<div class="EachFeedBackReviewToShow"><div class="FeedBackerName" ng-model="FeedBackerNameInHomePage">' +
                         span.val().FeedBackerName +
@@ -266,10 +270,25 @@ BFCHomePage.controller("BFCHomeCtrl", ['$scope', '$http', function ($scope, $htt
                         '</div><div class="FeedBackRateGivenToShow">' +
                         StartLableFunction(span.val().Rating) +
                         '</div></div>';
-                    EachReviewtoHoldBody.append(eachStartLabelElement);
-
+                while (true) { 
+                if (ReviewToAppend == 1) {
+                    ReviewColumn1BodyHold.append(eachStartLabelElement);
+                    ReviewToAppend = 2;
+                    break;
+                }
+                if (ReviewToAppend == 2) {
+                    ReviewColumn2BodyHold.append(eachStartLabelElement);
+                    ReviewToAppend = 3;
+                    break;
+                }
+                if (ReviewToAppend == 3) {
+                    ReviewColumn3BodyHold.append(eachStartLabelElement);
+                    ReviewToAppend = 1;
+                    break;
+                }
+            }
             });
     }
 
-    $scope.getFeedBackReviewOnHomePage(10);
+     $scope.getFeedBackReviewOnHomePage(10);
 }]);
