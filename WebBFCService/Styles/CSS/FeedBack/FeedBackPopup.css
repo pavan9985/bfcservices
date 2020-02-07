@@ -1,28 +1,26 @@
 ﻿.FeedBackHeading {
     text-align: center;
-    font-weight: bold;
-    font-size: larger;
+    font-weight:;
+    font-size: x-large;
     margin: 0px 0px 15px 0px;
+    color: white;
 }
 
 .FeedBackPoints {
-    background: #a9a9c5
+    background: #a9a9c5;
 }
 
 .FeedBackMain {
     background: #372746bd;
-    width: 75%;
+    width: 85%;
     margin: auto;
     padding: 15px 0px 10px 0px;
     border-radius: 10px;
 }
 
-.FeedBackPopUp {
-}
-
 .OtherFeedBackCss {
     text-align: center;
-    margin: 18px 0px 0px 9%;
+    margin: 18px 0px 0px 22%;
     min-width: 21%;
     box-border: none;
     border-radius: 10px;
@@ -53,6 +51,7 @@
 
 .FeedBackSubmitButton {
     background: #b3f7ca;
+    margin: 10px;
     border: none;
     font-size: 15px;
 }
@@ -71,12 +70,14 @@
 
 .FeedBackCancleButton {
     background: #fdd296fa;
+    margin: 10px;
     border: none;
     font-size: 15px;
 }
 
 .FeedBackResetButton {
     background: #abd9fdfa;
+    margin: 10px;
     border: none;
     font-size: 15px;
 }
@@ -93,14 +94,25 @@
     transform: scale(1.2);
 }
 
-.RatingStarsOnFeedBack label {
-    margin: 10px;
-    text-shadow: 1px 1px 2.2px black;
-    transition: 0.2s ease-in-out;
-}
+    .RatingStarsOnFeedBack label {
+        margin: 10px;
+        text-shadow: 1px 1px 2.2px black;
+        transition: 0.2s ease-in-out;
+    }
 
-.RatingStarsOnFeedBack label:hover {
-    background: black;
-    font-size: x-large;
-    border-radius: 50%;
+        .RatingStarsOnFeedBack label:hover {
+            background: black;
+            font-size: x-large;
+            border-radius: 50%;
+        }
+
+
+@media (min-width: 960px) {
+
+    .FeedBackMain {
+        width: 40%;
+        margin: auto;
+        padding: 15px 0px 10px 0px;
+        border-radius: 10px;
+    }
 }
